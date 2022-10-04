@@ -5,7 +5,8 @@
 $color-primaire:#9356DC;
 $color-Secondaire :#FF79DA ;
 $color-Tertiaire:#99E2D0;
-
+$color-gris:#F6F6F6;
+ 
 
 %btn{
    
@@ -51,7 +52,7 @@ body{
 .info{
     display: flex;
     flex-direction:column ;  
-background-color:  #d2d2d226;;
+background-color: $color-gris;
     row-gap: 17px;
     justify-content: center;
     align-items: center;
@@ -83,6 +84,9 @@ h3{
 .fonction{
     padding-top: 20px;
 padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 h2{
     font-size: 24px;
@@ -98,7 +102,7 @@ counter-reset: compteListe;
 .etapes-fonction{
     @extend %btn;
     
-    background-color:#F6F6F6;
+    background-color:$color-gris;
     display: flex;
     flex-direction: row;
     height: 50px;
@@ -120,7 +124,62 @@ counter-increment: compteListe 1;
     align-items: center;
     color: #fff;
     position: absolute;
-    left: 37px;}
+    left: 68px;}
 } 
 }
+
+
+
+.resto{
+    background-color: $color-gris;
+    
+
+h3{
+    font-size: 24px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 45px;
+
+}
+    .plats{
+        background-color: white;
+display: flex;
+flex-direction: column;
+
+        div{
+            position: relative;
+img{
+    width: 90%;
+    height: 200px;
+     
+}
+.nouveu 
+{position: relative;
+    right: -192px;
+    top: -214px;
+    height: 20px;
+width: 70px;
+background-color:$color-Tertiaire;
+
+}
+        
+        }
+
+        .info-plats{
+display: flex;
+flex-direction: row;
+background-color: white;
+
+.paragraphe{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+        }
+    }
+
+} 
+
 }
