@@ -1,0 +1,98 @@
+@media only screen and (max-width: 767px) {
+  .fonction .etapes-fonction, .info a {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  * {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  body {
+    margin: 0 auto;
+  }
+  .header {
+    height: auto;
+  }
+  .header .titreHeader {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+  .localisation {
+    background-color: #EAEAEA;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(210, 210, 210, 0.1490196078);
+    row-gap: 17px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .info h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .info p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .info a {
+    color: white;
+    height: 38px;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+  }
+  .color {
+    color: #7E7E7E;
+  }
+  /**/
+  .fonction {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .fonction h2 {
+    font-size: 24px;
+    padding-left: 30px;
+  }
+  .fonction ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    counter-reset: compteListe;
+  }
+  .fonction .etapes-fonction {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+    padding-left: 32px;
+  }
+  .fonction .etapes-fonction::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: 37px;
+  }
+}/*# sourceMappingURL=styleMobil.css.map */
