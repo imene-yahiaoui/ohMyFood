@@ -16,12 +16,16 @@ $color-gris:#F6F6F6;
       text-decoration: none;
     display: flex;
     align-items: center;
+    box-shadow: 0px 8px 10px -5px grey;
+   
   
 }
 
 *{
     font-family: 'Roboto', sans-serif;
  font-size: 16px;
+  box-sizing: border-box;
+ text-decoration: none;
 }
 
 body{
@@ -67,7 +71,7 @@ h3{
     a{
        
         color:white; 
-        height:38px;
+        height: 56px;
         background-image: linear-gradient( $color-primaire,$color-Secondaire);
       
         @extend %btn;
@@ -86,7 +90,7 @@ h3{
 padding-bottom: 40px;
 display: flex;
 flex-direction: column;
-align-items: center;
+ 
 
 h2{
     font-size: 24px;
@@ -98,6 +102,7 @@ display: flex;
 flex-direction: column;
 row-gap: 20px;
 counter-reset: compteListe;
+padding: 0px 19px;
     }
 .etapes-fonction{
     @extend %btn;
@@ -105,7 +110,7 @@ counter-reset: compteListe;
     background-color:$color-gris;
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 77px;
     column-gap: 17px;
     padding-left: 32px;
 
@@ -124,57 +129,97 @@ counter-increment: compteListe 1;
     align-items: center;
     color: #fff;
     position: absolute;
-    left: 68px;}
+    left: 20px;}
 } 
 }
 
 
-
-.resto{
-    background-color: $color-gris;
-    
-
-h3{
-    font-size: 24px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 45px;
-
+.coeur{
+    font-size: 35px;
+    padding-top: 29px;
+    position: absolute;
+     right: 57px;
 }
+
+/*///////////les restaurant /////////*/
+.restaurant{
+    background-color: $color-gris;
+    padding-bottom: 62px;
+
+    h3{
+        font-size: 24px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 45px;
+    
+    }
+}
+.resto{
+   
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+a{
+    display: flex;
+justify-content: center;
+}
+
     .plats{
         background-color: white;
 display: flex;
 flex-direction: column;
+border-radius: 26px;
 
-        div{
-            position: relative;
+
+ 
+        .photos{
+           
+            height: 154px;
+       
 img{
-    width: 90%;
-    height: 200px;
-     
+        object-fit: cover;
+    border-radius: 17px 17px 0px 0px;
 }
-.nouveu 
-{position: relative;
-    right: -192px;
-    top: -214px;
-    height: 20px;
-width: 70px;
+.nouveau 
+{    position: relative;
+    right: -234px;
+    top: -187px;
+    height: 29px;
+    width: 89px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
 background-color:$color-Tertiaire;
+color:#008766 ;
+font-size: 14px;
 
 }
         
         }
 
+
         .info-plats{
-display: flex;
-flex-direction: row;
-background-color: white;
+            display: flex;
+            flex-direction: row;
+            column-gap: 121px;
+            align-items: center;
+
 
 .paragraphe{
 
-    display: flex;
-    flex-direction: column;
+    padding-left: 16px;
+
+   h6{
+    font-size: 18px;
+    margin-bottom: -10px;
+   }
+   p{
+    font-size: 17px;
+   }
 }
+
 
 
         }
@@ -182,4 +227,50 @@ background-color: white;
 
 } 
 
+footer{
+    background-color: #353535;
+    color: white;
+    margin-top: -44px;
+    padding-bottom: 38px;
+
+
+h3{
+    font-family: Shrikhand;
+    font-size: 18px;
+    padding-top: 25px;  
+    padding-left: 25px;
+    line-height: 26px;
+    margin-bottom: 2px;
 }
+a{
+  color: white;
+  margin-top: 1px;
+
+}
+.icon-footer { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   column-gap: 10px;
+   margin-bottom: -25px;
+
+}
+
+.info-footer{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+}
+
+
+        }
+
+
+
+    }
+
+
+
+ 

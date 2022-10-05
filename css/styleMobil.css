@@ -6,10 +6,13 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    box-shadow: 0px 8px 10px -5px grey;
   }
   * {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
   }
   body {
     margin: 0 auto;
@@ -51,7 +54,7 @@
   }
   .info a {
     color: white;
-    height: 38px;
+    height: 56px;
     background-image: linear-gradient(#9356DC, #FF79DA);
   }
   .color {
@@ -63,7 +66,6 @@
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .fonction h2 {
     font-size: 24px;
@@ -74,12 +76,13 @@
     flex-direction: column;
     row-gap: 20px;
     counter-reset: compteListe;
+    padding: 0px 19px;
   }
   .fonction .etapes-fonction {
     background-color: #F6F6F6;
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 77px;
     -moz-column-gap: 17px;
          column-gap: 17px;
     padding-left: 32px;
@@ -96,44 +99,109 @@
     align-items: center;
     color: #fff;
     position: absolute;
-    left: 68px;
+    left: 20px;
   }
-  .resto {
+  .coeur {
+    font-size: 35px;
+    padding-top: 29px;
+    position: absolute;
+    right: 57px;
+  }
+  /*///////////les restaurant /////////*/
+  .restaurant {
     background-color: #F6F6F6;
+    padding-bottom: 62px;
   }
-  .resto h3 {
+  .restaurant h3 {
     font-size: 24px;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 45px;
   }
+  .resto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .resto a {
+    display: flex;
+    justify-content: center;
+  }
   .resto .plats {
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 26px;
   }
-  .resto .plats div {
+  .resto .plats .photos {
+    height: 154px;
+  }
+  .resto .plats .photos img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 17px 17px 0px 0px;
+  }
+  .resto .plats .photos .nouveau {
     position: relative;
-  }
-  .resto .plats div img {
-    width: 90%;
-    height: 200px;
-  }
-  .resto .plats div .nouveu {
-    position: relative;
-    right: -192px;
-    top: -214px;
-    height: 20px;
-    width: 70px;
+    right: -234px;
+    top: -187px;
+    height: 29px;
+    width: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #99E2D0;
+    color: #008766;
+    font-size: 14px;
   }
   .resto .plats .info-plats {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    -moz-column-gap: 121px;
+         column-gap: 121px;
+    align-items: center;
   }
   .resto .plats .info-plats .paragraphe {
+    padding-left: 16px;
+  }
+  .resto .plats .info-plats .paragraphe h6 {
+    font-size: 18px;
+    margin-bottom: -10px;
+  }
+  .resto .plats .info-plats .paragraphe p {
+    font-size: 17px;
+  }
+  footer {
+    background-color: #353535;
+    color: white;
+    margin-top: -44px;
+    padding-bottom: 38px;
+  }
+  footer h3 {
+    font-family: Shrikhand;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-left: 25px;
+    line-height: 26px;
+    margin-bottom: 2px;
+  }
+  footer a {
+    color: white;
+    margin-top: 1px;
+  }
+  footer .icon-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin-bottom: -25px;
+  }
+  footer .info-footer {
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
+    row-gap: 2px;
   }
 }/*# sourceMappingURL=styleMobil.css.map */
