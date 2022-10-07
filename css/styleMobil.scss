@@ -1,276 +1,274 @@
-
 @media only screen and (max-width: 767px) {
+    $color-primaire: #9356dc;
+    $color-Secondaire: #ff79da;
+    $color-Tertiaire: #99e2d0;
+    $color-gris: #f6f6f6;
 
+    %btn {
+        border-radius: 30px;
+        padding: 10px 26px;
+        margin: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 8px 10px -5px grey;
+    }
 
-$color-primaire:#9356DC;
-$color-Secondaire :#FF79DA ;
-$color-Tertiaire:#99E2D0;
-$color-gris:#F6F6F6;
+    * {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+        text-decoration: none;
+       
+    }
+
+    body {
+        margin: 0 auto;
+    }
+    /*header*/
+    .header {
+        height: auto;
+        .titreHeader {
+            font-family: "Shrikhand", cursive;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .localisation {
+        background-color: #eaeaea;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 18px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-gris;
+        
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            width: 70%;
+        }
+        p {
+            margin-top: -9px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 33px;
+        }
+        a {
+            color: white;
+            height: 56px;
+            background-image: linear-gradient( $color-Secondaire,$color-primaire);
+            @extend %btn;
+            text-align: center;
+            
+        }
+    }
+    .color {
+        color: #7e7e7e;
+    }
+
+    /*main padding */
  
 
-%btn{
-   
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 5px;
-      text-decoration: none;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 8px 10px -5px grey;
-   
-  
-}
 
-*{
-    font-family: 'Roboto', sans-serif;
- font-size: 16px;
-  box-sizing: border-box;
- text-decoration: none;
-}
 
-body{
-    margin: 0 auto;
-
-}
-.header{
-    height: auto;
-    .titreHeader{
-        
-    font-family: 'Shrikhand', cursive;
-    font-size: 30px;
-    text-align: center;
-    }
-}
-
-.localisation{
-    background-color: #EAEAEA;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 18px;
-
-   
-}
-.info{
-    display: flex;
-    flex-direction:column ;  
-background-color: $color-gris;
-    row-gap: 17px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-h3{
-    font-size: 24px;
-    text-align: center;}
-  p{
-    font-size: 18px;
-    text-align: center;
-  }  
-    a{
-       
-        color:white; 
-        height: 56px;
-        background-image: linear-gradient( $color-primaire,$color-Secondaire);
+    .fonction {
       
-        @extend %btn;
-    }
-}
-.color{
-   color:#7E7E7E
-}
-
-
-/**/
-
-
-.fonction{
-    padding-top: 20px;
-padding-bottom: 40px;
-display: flex;
-flex-direction: column;
- 
-
-h2{
-    font-size: 24px;
-    padding-left: 30px;
-}
-
-    ol{
-display: flex;
-flex-direction: column;
-row-gap: 20px;
-counter-reset: compteListe;
-padding: 0px 19px;
-    }
-.etapes-fonction{
-    @extend %btn;
-    
-    background-color:$color-gris;
-    display: flex;
-    flex-direction: row;
-    height: 77px;
-    column-gap: 17px;
-    padding-left: 32px;
-
-
-
-  
-   &::before{
-counter-increment: compteListe 1;
-    content: counter(compteListe) " ";
-    background: #9356dc;
-    height:24px;
-    width: 24px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    left: 20px;}
-} 
-}
-
-
-.coeur{
-    font-size: 35px;
-    padding-top: 29px;
-    position: absolute;
-     right: 57px;
-}
-
-/*///////////les restaurant /////////*/
-.restaurant{
-    background-color: $color-gris;
-    padding-bottom: 62px;
-
-    h3{
-        font-size: 24px;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 45px;
-    
-    }
-}
-.resto{
-   
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-a{
-    display: flex;
-justify-content: center;
-}
-
-    .plats{
-        background-color: white;
-display: flex;
-flex-direction: column;
-border-radius: 26px;
-
-
- 
-        .photos{
-           
-            height: 154px;
-       
-img{
-        object-fit: cover;
-    border-radius: 17px 17px 0px 0px;
-}
-.nouveau 
-{    position: relative;
-    right: -234px;
-    top: -187px;
-    height: 29px;
-    width: 89px;
-      display: flex;
-    align-items: center;
-    justify-content: center;
-background-color:$color-Tertiaire;
-color:#008766 ;
-font-size: 14px;
-
-}
+        display: flex;
+        flex-direction: column;
         
+margin-left: 17px;
+margin-right: 17px;
+
+        h2 {
+            font-size: 24px;
+            padding-left: 30px;
         }
 
+        ol {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            counter-reset: compteListe;
+            padding: 0px;
+        }
+        .etapes-fonction {
+            @extend %btn;
 
-        .info-plats{
+            background-color: $color-gris;
             display: flex;
             flex-direction: row;
-            column-gap: 121px;
+            height: 77px;
+            column-gap: 17px;
+            padding-left: 32px;
+
+            &::before {
+                counter-increment: compteListe 1;
+                content: counter(compteListe) " ";
+                background: #9356dc;
+                height: 24px;
+                width: 24px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                position: absolute;
+                left: 11px;
+            }
+        }
+    }
+
+    .coeur {
+        
+        font-size: 35px;
+        position: absolute;
+        right: 31px;
+         color: grey;
+               
+    }
+
+    /*///////////les restaurant /////////*/
+    .restaurant {
+        background-color: $color-gris;
+        padding-bottom: 62px;
+       
+
+         
+
+        h3 {
+            font-size: 24px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-top: 45px;
+        }
+    }
+    .resto {
+        display: flex;
+        flex-direction: column;
+   
+     /*   justify-content: center;
+        align-items: center;*/
+
+        a {
+            display: flex;
+         /*   justify-content: center;*/
+        }
+
+        .plats {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 26px;
+            width: 95%;
+            height: 288px;
+            margin: 17px;
+
+            .photos {
+                
+                height: 185px;
+                img {
+
+                    width: 100%;
+                    height: 207px;
+                    border-radius: 16px 16px 0px 0px;
+                    object-fit: cover;
+
+                    /*
+                    object-fit: cover;
+                    border-radius: 17px 17px 0px 0px;
+                    
+                    width: 100%;
+                    height: 229px;
+                    object-fit: fill;
+                */
+                }
+                .nouveau {
+                    background-color: #99E2D0;
+                    display: flex;
+                    height: 30px;
+                    align-items: center;
+                    padding: 10px;
+                    color: #32b091;
+                    position: absolute;
+                    right: 10%;
+                    margin-top: -199px;
+                }
+            }
+
+            .info-plats {
+                margin: 12px;
+                display: flex;
+                justify-content: space-between;
+               align-items: center;
+                color:black;
+
+                .paragraphe {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 88px;
+
+                    h6 {
+                        font-size: 18px;
+                        margin-bottom: -10px;
+                    }
+                    p {
+                        font-size: 17px;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*footer*/
+    footer {
+        background-color: #353535;
+        color: white;
+        margin-top: -44px;
+        padding-bottom: 38px;
+        padding-left: 20px;
+
+        h3 {
+            color: white;
+            font-family: Shrikhand;
+            font-size: 18px;
+            padding-top: 25px;
+            line-height: 26px;
+            margin-bottom: 2px;
+        }
+        a {
+            color: white;
+            margin-top: -8px;
+        }
+        .icon-footer {
+            display: flex;
+            flex-direction: row;
             align-items: center;
-
-
-.paragraphe{
-
-    padding-left: 16px;
-
-   h6{
-    font-size: 18px;
-    margin-bottom: -10px;
-   }
-   p{
-    font-size: 17px;
-   }
-}
-
-
-
-        }
-    }
-
-} 
-
-footer{
-    background-color: #353535;
-    color: white;
-    margin-top: -44px;
-    padding-bottom: 38px;
-
-
-h3{
-    font-family: Shrikhand;
-    font-size: 18px;
-    padding-top: 25px;  
-    padding-left: 25px;
-    line-height: 26px;
-    margin-bottom: 2px;
-}
-a{
-  color: white;
-  margin-top: 1px;
-
-}
-.icon-footer { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   column-gap: 10px;
-   margin-bottom: -25px;
-
-}
-
-.info-footer{
-    padding-left: 25px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
-
-}
-
-
+            column-gap: 10px;
+            margin-bottom: -25px;
+            
         }
 
-
-
+        .info-footer {
+          
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
+           
+        }
     }
-
-
-
- 
+}

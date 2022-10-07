@@ -1,7 +1,7 @@
 @media only screen and (max-width: 767px) {
   .fonction .etapes-fonction, .info a {
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 10px 26px;
     margin: 5px;
     text-decoration: none;
     display: flex;
@@ -17,6 +17,7 @@
   body {
     margin: 0 auto;
   }
+  /*header*/
   .header {
     height: auto;
   }
@@ -26,7 +27,7 @@
     text-align: center;
   }
   .localisation {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -38,8 +39,7 @@
   .info {
     display: flex;
     flex-direction: column;
-    background-color: #F6F6F6;
-    row-gap: 17px;
+    background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
     padding-bottom: 60px;
@@ -47,25 +47,29 @@
   .info h3 {
     font-size: 24px;
     text-align: center;
+    width: 70%;
   }
   .info p {
+    margin-top: -9px;
     font-size: 18px;
     text-align: center;
+    margin-bottom: 33px;
   }
   .info a {
     color: white;
     height: 56px;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient(#ff79da, #9356dc);
+    text-align: center;
   }
   .color {
-    color: #7E7E7E;
+    color: #7e7e7e;
   }
-  /**/
+  /*main padding */
   .fonction {
-    padding-top: 20px;
-    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
+    margin-left: 17px;
+    margin-right: 17px;
   }
   .fonction h2 {
     font-size: 24px;
@@ -76,10 +80,10 @@
     flex-direction: column;
     row-gap: 20px;
     counter-reset: compteListe;
-    padding: 0px 19px;
+    padding: 0px;
   }
   .fonction .etapes-fonction {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
     height: 77px;
@@ -99,17 +103,17 @@
     align-items: center;
     color: #fff;
     position: absolute;
-    left: 20px;
+    left: 11px;
   }
   .coeur {
     font-size: 35px;
-    padding-top: 29px;
     position: absolute;
-    right: 57px;
+    right: 31px;
+    color: grey;
   }
   /*///////////les restaurant /////////*/
   .restaurant {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding-bottom: 62px;
   }
   .restaurant h3 {
@@ -121,49 +125,64 @@
   .resto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*   justify-content: center;
+       align-items: center;*/
   }
   .resto a {
     display: flex;
-    justify-content: center;
+    /*   justify-content: center;*/
   }
   .resto .plats {
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 26px;
+    width: 95%;
+    height: 288px;
+    margin: 17px;
   }
   .resto .plats .photos {
-    height: 154px;
+    height: 185px;
   }
   .resto .plats .photos img {
+    width: 100%;
+    height: 207px;
+    border-radius: 16px 16px 0px 0px;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 17px 17px 0px 0px;
+    /*
+        object-fit: cover;
+        border-radius: 17px 17px 0px 0px;
+
+        width: 100%;
+        height: 229px;
+        object-fit: fill;
+    */
   }
   .resto .plats .photos .nouveau {
-    position: relative;
-    right: -234px;
-    top: -187px;
-    height: 29px;
-    width: 89px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #99E2D0;
-    color: #008766;
-    font-size: 14px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    color: #32b091;
+    position: absolute;
+    right: 10%;
+    margin-top: -199px;
   }
   .resto .plats .info-plats {
+    margin: 12px;
     display: flex;
-    flex-direction: row;
-    -moz-column-gap: 121px;
-         column-gap: 121px;
+    justify-content: space-between;
     align-items: center;
+    color: black;
   }
   .resto .plats .info-plats .paragraphe {
-    padding-left: 16px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 88px;
   }
   .resto .plats .info-plats .paragraphe h6 {
     font-size: 18px;
@@ -171,24 +190,27 @@
   }
   .resto .plats .info-plats .paragraphe p {
     font-size: 17px;
+    color: grey;
   }
+  /*footer*/
   footer {
     background-color: #353535;
     color: white;
     margin-top: -44px;
     padding-bottom: 38px;
+    padding-left: 20px;
   }
   footer h3 {
+    color: white;
     font-family: Shrikhand;
     font-size: 18px;
     padding-top: 25px;
-    padding-left: 25px;
     line-height: 26px;
     margin-bottom: 2px;
   }
   footer a {
     color: white;
-    margin-top: 1px;
+    margin-top: -8px;
   }
   footer .icon-footer {
     display: flex;
@@ -199,7 +221,6 @@
     margin-bottom: -25px;
   }
   footer .info-footer {
-    padding-left: 25px;
     display: flex;
     flex-direction: column;
     row-gap: 2px;
