@@ -1,0 +1,116 @@
+@media only screen and (min-width: 768px) {
+
+
+body{
+    max-width: 1400px;
+}
+    .info h3 {
+        font-size: 40px;
+        text-align: center;
+        width: 70%;
+    }
+  
+
+.fonction{
+    padding-left: 126px;
+
+    ol{
+        flex-direction: row;
+     
+        column-gap: 42px;
+    }
+
+   .etapes-fonction{
+       width: 26%;
+       padding-left: 0px;
+   
+   &::before{
+        left: -13px;
+        position: relative;
+    }}
+}
+
+
+
+
+.restaurant{
+    padding-left: 126px;
+}
+.resto{
+    flex-direction: row;
+}
+
+.photos img {
+   max-width:287px;
+   object-fit: contain;
+    height: auto;
+}
+
+
+.nouveaua {
+    position: relative;
+    width: 88px;
+    right: -131px;
+    top: 71px;
+}
+
+ .nouveaub{
+    position: relative;
+    width: 88px;
+    right: -131px;
+    top: 71px;
+}
+.plats{
+    height: 249px;
+}
+
+.photos {
+    height: 132px;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    margin-top: -5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 106px;
+    justify-content: center;
+h3{
+    order: 2;
+    padding-left: 52px;
+    padding-top: 22px;
+}
+    a{
+        margin-top: 0px;
+    }
+
+    .info-footer {
+        order: 1;
+        flex-direction: row;
+       column-gap: 46px;
+        align-items: center;}
+
+
+        .icon-footer {
+            margin-bottom: 0px;
+           
+            }
+
+
+}
+
+.coeur {
+    position: relative;
+    right: 21px;
+    top: 10px;
+    font-size: 20px;
+}
+
+
+}
