@@ -1,0 +1,25 @@
+{
+  "name": "npm-init-ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imene-yahiaoui/Ohmyfood-.git"
+  },
+  "keywords": [
+    "ohmyfood",
+    "package.json",
+    "npm",
+    "init"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imene-yahiaoui/Ohmyfood-/issues"
+  },
+  "homepage": "https://github.com/imene-yahiaoui/Ohmyfood-#readme"
+}
