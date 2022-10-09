@@ -19,11 +19,6 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1000px) {
-  body {
-    max-width: 1400px;
-  }
-}
 /*header*/
 .header {
   height: auto;
@@ -134,17 +129,23 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .fonction {
-    padding-left: 126px;
+    padding-left: 104px;
+    padding-right: 90px;
+  }
+  .fonction h2 {
+    padding-left: 0px;
   }
   .fonction ol {
     flex-direction: row;
+    justify-content: center;
     -moz-column-gap: 42px;
          column-gap: 42px;
   }
   .fonction .etapes-fonction {
-    -moz-column-gap: 3px;
-         column-gap: 3px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     padding-left: 0px;
+    width: 43%;
   }
   .fonction .etapes-fonction::before {
     left: -13px;
@@ -234,13 +235,14 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .restaurant {
-    padding-left: 126px;
-  }
-  .resto .plats {
-    height: auto;
+    padding-left: 104px;
+    padding-right: 90px;
   }
   .resto {
     flex-direction: row;
+  }
+  .resto .plats {
+    height: auto;
   }
   .resto .plats .photos img {
     -o-object-fit: fill;
@@ -250,29 +252,21 @@ body {
 .nouveaub {
     position: relative;
     width: 66px;
-    right: -111px;
+    right: -95px;
     top: -201px;
     font-size: 13px;
     margin-top: 0px;
-    height: 22px;
+    height: 25px;
     padding: 6px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .fonction .etapes-fonction {
-    -moz-column-gap: 36px;
-         column-gap: 36px;
-  }
   .nouveaua,
 .nouveaub {
     right: -159px;
   }
 }
 @media only screen and (min-width: 1300px) {
-  .fonction .etapes-fonction {
-    -moz-column-gap: 63px;
-         column-gap: 63px;
-  }
   .nouveaua,
 .nouveaub {
     right: -185px;

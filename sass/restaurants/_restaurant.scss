@@ -91,15 +91,23 @@
         }
         @media only screen and (min-width: 1000px)  {
             .restaurant{
-                padding-left: 126px;
+                padding-left: 104px;
+               
+                padding-right: 90px;
+            }
+
+            .resto {
+
+
+flex-direction: row;
+
+
             }
             .resto .plats {
                 
                 height: auto;
             }
-            .resto{
-                flex-direction: row;
-            }
+          
             
             .resto .plats .photos img{
                 object-fit: fill;
@@ -108,26 +116,23 @@
             
             .nouveaua,
              .nouveaub{
-                position: relative;
-                width: 66px;
-                right: -111px;
-                top:  -201px;
-                font-size: 13px;
-                margin-top: 0px;
-                height: 22px;
-                padding: 6px;
-            }
+               position: relative;
+    width: 66px;
+    right: -95px;
+    top: -201px;
+    font-size: 13px;
+    margin-top: 0px;
+    height: 25px;
+    padding: 6px;
         }
         
-        
+    }
 
 
 @media only screen and (min-width: 1200px)  {
      
     
-    .fonction .etapes-fonction{
-         column-gap: 36px;
-       }
+ 
  
      .nouveaua,
      .nouveaub{
@@ -143,9 +148,7 @@
      
  @media only screen and (min-width: 1300px)  {
       
-    .fonction .etapes-fonction{
-     column-gap: 63px;
-   }
+  
  
  
      .nouveaua,

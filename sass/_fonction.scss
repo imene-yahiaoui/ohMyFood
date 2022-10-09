@@ -58,17 +58,26 @@ margin-right: 17px;
    
 
         .fonction{
-            padding-left: 126px;
+            padding-left: 104px;
+               
+            padding-right: 90px;
+
+            h2 {
+            
+                padding-left: 0px;
+            }
+    
         
             ol{
                 flex-direction: row;
-             
+                justify-content: center;
                 column-gap: 42px;
             }
         
            .etapes-fonction{
-            column-gap: 3px;
+            column-gap: 24px;
                    padding-left: 0px;
+                   width: 43%;
            
            &::before{
                 left: -13px;
