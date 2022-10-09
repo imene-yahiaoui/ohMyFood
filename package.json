@@ -4,7 +4,8 @@
   "description": "ohmyfood package.json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch style.scss style.css ",
+    "build": "postcss ./css/style.css -u autoprefixer -o ./build/style.main.css"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/imene-yahiaoui/Ohmyfood-/issues"
   },
-  "homepage": "https://github.com/imene-yahiaoui/Ohmyfood-#readme"
+  "homepage": "https://github.com/imene-yahiaoui/Ohmyfood-#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0"
+  }
 }
