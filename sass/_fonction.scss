@@ -1,0 +1,78 @@
+
+    .color {
+        color: #7e7e7e;
+    }
+
+    .fonction {
+      
+        display: flex;
+        flex-direction: column;
+        
+margin-left: 17px;
+margin-right: 17px;
+
+        h2 {
+            font-size: 24px;
+            padding-left: 30px;
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            counter-reset: compteListe;
+            padding: 0px;
+        }
+        .etapes-fonction {
+            @extend %btn;
+
+            background-color: $color-gris;
+            display: flex;
+            flex-direction: row;
+            height: 77px;
+            column-gap: 17px;
+            padding-left: 32px;
+
+            &::before {
+                counter-increment: compteListe 1;
+                content: counter(compteListe) " ";
+                background: #9356dc;
+                height: 24px;
+                width: 24px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                position: absolute;
+                left: 11px;
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: 1000px)  {
+
+
+
+   
+
+        .fonction{
+            padding-left: 126px;
+        
+            ol{
+                flex-direction: row;
+             
+                column-gap: 42px;
+            }
+        
+           .etapes-fonction{
+            column-gap: 3px;
+                   padding-left: 0px;
+           
+           &::before{
+                left: -13px;
+                position: relative;
+            }}
+        }
+    }

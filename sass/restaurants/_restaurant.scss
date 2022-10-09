@@ -1,0 +1,157 @@
+.restaurant {
+    background-color: $color-gris;
+    padding-bottom: 62px;
+   
+
+     
+
+    h3 {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 45px;
+    }
+}
+.resto {
+    display: flex;
+    flex-direction: column;
+
+ /*   justify-content: center;
+    align-items: center;*/
+
+    a {
+        display: flex;
+     /*   justify-content: center;*/
+    }
+
+    .plats {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 26px;
+        width: 95%;
+        height: 288px;
+        margin: 17px;
+        //animation les plats
+        &:hover{
+            opacity: .5;
+            transform: opacity .7s;
+
+        }
+
+        .photos {
+            
+            height: 185px;
+            img {
+
+               width: 100%;
+                height: 207px;
+                border-radius: 16px 16px 0px 0px;
+                object-fit: cover;
+
+            }}}}
+              .nouveaua,
+            .nouveaub
+             {
+                background-color: #99E2D0;
+                display: flex;
+                height: 30px;
+                align-items: center;
+                padding: 10px;
+                color: #32b091;
+                position: absolute;
+                right: 10%;
+                margin-top: -199px;
+            }
+        
+
+        .info-plats {
+            margin: 12px;
+            display: flex;
+            justify-content: space-between;
+           align-items: center;
+            color:black;
+
+            .paragraphe {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 88px;
+
+                h6 {
+                    font-size: 18px;
+                    margin-bottom: -10px;
+                }
+                p {
+                    font-size: 17px;
+                    color: grey;
+                }
+            }
+        }
+        @media only screen and (min-width: 1000px)  {
+            .restaurant{
+                padding-left: 126px;
+            }
+            .resto .plats {
+                
+                height: auto;
+            }
+            .resto{
+                flex-direction: row;
+            }
+            
+            .resto .plats .photos img{
+                object-fit: fill;
+            }
+            
+            
+            .nouveaua,
+             .nouveaub{
+                position: relative;
+                width: 66px;
+                right: -111px;
+                top:  -201px;
+                font-size: 13px;
+                margin-top: 0px;
+                height: 22px;
+                padding: 6px;
+            }
+        }
+        
+        
+
+
+@media only screen and (min-width: 1200px)  {
+     
+    
+    .fonction .etapes-fonction{
+         column-gap: 36px;
+       }
+ 
+     .nouveaua,
+     .nouveaub{
+ 
+         right:  -159px;
+         }
+ 
+ 
+ 
+ 
+     }
+ 
+     
+ @media only screen and (min-width: 1300px)  {
+      
+    .fonction .etapes-fonction{
+     column-gap: 63px;
+   }
+ 
+ 
+     .nouveaua,
+     .nouveaub{
+ 
+         right:  -185px;
+         }
+ 
+     }

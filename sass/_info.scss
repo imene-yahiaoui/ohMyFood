@@ -1,0 +1,53 @@
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-gris;
+        
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            width: 70%;
+        }
+        p {
+            margin-top: -9px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 33px;
+            color:#353535
+        }
+        .btn {
+            color: white;
+            height: 56px;
+            border-radius: 30px;
+            background-image: linear-gradient( $color-Secondaire,$color-primaire);
+            @extend %btn;
+            text-align: center;
+            /*animation  btn */
+            &:hover{
+                opacity: .5;
+                transform: opacity .7s;
+                transform: scale(1.2);
+                transition: transform .3s ease-in-out;
+
+            }
+            
+        }
+    }
+
+
+    @media only screen and (min-width: 1000px)  {
+
+
+
+        .info h3 {
+            font-size: 40px;
+            text-align: center;
+            width: 70%;
+        }
+  
+        
+    }
