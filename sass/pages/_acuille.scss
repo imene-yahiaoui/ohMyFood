@@ -1,0 +1,27 @@
+//variables
+@import "../sass/utils/variables";
+
+//cpmponent
+@import"../sass/components/bouttons";
+
+
+//base
+@import "../sass/base/body";
+
+
+//layout
+@import "../sass/layout/header";
+
+@import "../sass/layout/localisation";
+@import"../sass/layout/info";
+@import"../sass/layout/fonction";
+@import"../sass/restaurants/restaurant";
+@import"../sass/layout/footer";
+
+
+//themes
+@import"../sass/themes/loader";
+
+@import"../sass/themes/coeur";
+
+
