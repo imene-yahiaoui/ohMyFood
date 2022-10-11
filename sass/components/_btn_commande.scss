@@ -1,0 +1,21 @@
+.commande{
+    display: flex;
+    justify-content: center;
+}
+.btn_commande {
+    width: 50%;
+    color: white;
+    height: 56px;
+    border-radius: 30px;
+    background-image: linear-gradient( $color-Secondaire,$color-primaire);
+    @extend %btn;
+    display: flex;
+    justify-content: center;
+    /*animation  btn */
+    &:hover{
+        opacity: .5;
+        transform: opacity .7s;
+        transform: scale(1.2);
+        transition: transform .3s ease-in-out;
+
+    }}

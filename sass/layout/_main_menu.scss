@@ -1,0 +1,156 @@
+
+
+.img_menu{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: relative;
+}
+
+.menu{
+    background-color:#F6F6F6;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    margin-top:-61px;
+    position: relative;
+    z-index: 1;
+
+padding: 15px 20px 52px 20px;
+margin-bottom: 42px;
+
+}
+.titre_menu{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+    h3{
+    font-size: 24px;
+    font-family: "Shrikhand", cursive;
+    }
+
+}
+
+
+
+.btn_menu_check{
+    background-color: $color-Tertiaire;
+  
+    width:15%;
+    margin-right: -15%;
+    border-radius: 0px 20px 20px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    }
+
+ .fa .fa-solid,   
+.fa-check{
+ display: grid;
+  place-items: center;
+  background: white;
+  border-radius: 50%;
+  -webkit-text-stroke-width: 1px;
+  //aspect-ratio: 1/1;
+  width: 29px;
+  height: 29px;
+   color: $color-Tertiaire;
+   justify-items: center;
+ 
+}
+
+
+
+@keyframes chekAnim{
+    0% {
+        transform :rotate(-270deg);
+    
+    }
+    100%{ transform: rotate(0);
+
+    }
+}
+
+
+.btn_menu{
+    border-radius: 21px;
+    overflow: hidden;
+    box-shadow: 0px 8px 10px -5px grey;
+   background-color: white;
+margin: 0px;
+height: 73px;
+display: flex;
+
+
+
+
+
+
+
+span{
+    display: flex;
+    align-items: flex-end;
+    font-weight:900;
+    padding-bottom:11px;
+    padding-right: 19px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: auto;
+}
+p{
+    padding: 16px;
+    margin: 0px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+    font-size: 14px;
+    color: $color-grisFoncer;
+}
+b{
+    display: block;
+    padding-bottom: 10px;
+    
+}
+
+&:hover{
+  
+    .btn_menu_check{
+        transition: 1.5s;
+    margin-right: 0px;}
+.fa-check{
+    animation-name: chekAnim;
+    animation-duration:  1s;
+}
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.plats{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 40px;
+}
+
+.titre_choix_menu{
+    width:13%;    
+        color: $color-grisFoncer;
+        border-bottom: 3px solid $color-Tertiaire;
+        text-transform : uppercase;}
+
+.choix_menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}

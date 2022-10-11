@@ -4,8 +4,8 @@
         
         font-size: 35px;
         position: absolute;
-        right: 31px;
-         color: grey;
+        right: 57px;
+         color:$color-grisFoncer;
                
     }
   
@@ -13,14 +13,14 @@
       
         font-size: 35px;
         position: absolute;
-        right: 31px;
+        right: 57px;
        color: rgba(128, 128, 128, 0);
        
          &:hover{
             background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
             -webkit-background-clip: text;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: transparent;
          }
     }
 
