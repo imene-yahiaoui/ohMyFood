@@ -2,25 +2,31 @@
 
     .coeur {
         
-        font-size: 35px;
+      font-size: 23px;
         position: absolute;
         right: 57px;
          color:$color-grisFoncer;
                
     }
-  
+
+ 
    .coeur_color{
-      
-        font-size: 35px;
+    
+    font-size: 23px;
         position: absolute;
         right: 57px;
        color: rgba(128, 128, 128, 0);
-       
+      
+    
          &:hover{
-            background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
+         
+            transition: 4s;
+          background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+         
+            
          }
     }
 
@@ -29,16 +35,19 @@
  @media only screen and (min-width: 1000px)  {
 
     .coeur {
+     
+
         position: relative;
         right: 21px;
         top: 10px;
-        font-size: 20px;
+        font-size: 23px;
     }
     .coeur_color{
+     
         position: relative;
         right: 21px;
         top: 10px;
-        font-size: 20px;
+        font-size: 23px;
         color: aqua;
         
         &:hover{

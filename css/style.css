@@ -21,12 +21,16 @@ body {
 
 /*header*/
 .header {
-  height: auto;
+  margin-top: -22px;
+  height: 68px;
 }
 .header .titreHeader {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
   text-align: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0 3px 9px rgb(218, 218, 218);
 }
 
 .localisation {
@@ -91,10 +95,11 @@ body {
   flex-direction: column;
   margin-left: 17px;
   margin-right: 17px;
+  margin-top: 33px;
 }
 .fonction h2 {
   font-size: 24px;
-  padding-left: 30px;
+  margin-bottom: 5px;
 }
 .fonction ol {
   display: flex;
@@ -104,6 +109,7 @@ body {
   padding: 0px;
 }
 .fonction .etapes-fonction {
+  transition: all 0.3s ease;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
@@ -125,6 +131,12 @@ body {
   color: #fff;
   position: absolute;
   left: 11px;
+}
+.fonction .etapes-fonction:hover {
+  background-color: rgba(146, 86, 220, 0.2078431373);
+}
+.fonction .etapes-fonction:hover .color {
+  color: #9356dc;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -159,7 +171,7 @@ body {
 .restaurant h3 {
   font-size: 24px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 6px;
   padding-top: 45px;
 }
 
@@ -180,6 +192,7 @@ body {
   border-radius: 26px;
   width: 95%;
   margin: 17px;
+  height: 261px;
 }
 .resto .plats:hover {
   opacity: 0.5;
@@ -190,7 +203,7 @@ body {
 }
 .resto .plats .photos img {
   width: 100%;
-  height: 207px;
+  height: 168px;
   border-radius: 16px 16px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -200,17 +213,18 @@ body {
 .nouveaub {
   background-color: #99E2D0;
   display: flex;
-  height: 30px;
+  height: 29px;
   align-items: center;
   padding: 10px;
-  color: #32b091;
+  color: #299077;
   position: absolute;
   right: 10%;
-  margin-top: -199px;
+  margin-top: -154px;
+  border-radius: 3px;
+  font-size: 0.8rem;
 }
 
 .info-plats {
-  margin: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,11 +232,11 @@ body {
   padding-left: 15px;
 }
 .info-plats .paragraphe {
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 35px;
+  height: 10px;
+  margin-top: -8px;
 }
 .info-plats .paragraphe h6 {
   font-size: 18px;
@@ -292,7 +306,7 @@ footer h3 {
   margin-bottom: 2px;
 }
 footer .mail {
-  margin-top: -14px;
+  margin-top: -10px;
 }
 footer .icon-footer {
   display: flex;
@@ -305,7 +319,7 @@ footer .icon-footer {
 footer .info-footer {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 1px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -343,19 +357,20 @@ footer .info-footer {
   }
 }
 .coeur {
-  font-size: 35px;
+  font-size: 23px;
   position: absolute;
   right: 57px;
   color: #423f3f;
 }
 
 .coeur_color {
-  font-size: 35px;
+  font-size: 23px;
   position: absolute;
   right: 57px;
   color: rgba(128, 128, 128, 0);
 }
 .coeur_color:hover {
+  transition: 4s;
   background: linear-gradient(350deg, #ff79da 25%, #9356dc 65%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -367,13 +382,13 @@ footer .info-footer {
     position: relative;
     right: 21px;
     top: 10px;
-    font-size: 20px;
+    font-size: 23px;
   }
   .coeur_color {
     position: relative;
     right: 21px;
     top: 10px;
-    font-size: 20px;
+    font-size: 23px;
     color: aqua;
   }
   .coeur_color:hover {
@@ -527,17 +542,19 @@ body {
   margin-left: auto;
 }
 .btn_menu p {
-  padding: 16px;
+  padding: 10px;
   margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-size: 14px;
   color: #423f3f;
+  overflow: hidden;
 }
 .btn_menu b {
   display: block;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 .btn_menu:hover .btn_menu_check {
   transition: 1.5s;
@@ -635,7 +652,7 @@ footer h3 {
   margin-bottom: 2px;
 }
 footer .mail {
-  margin-top: -14px;
+  margin-top: -10px;
 }
 footer .icon-footer {
   display: flex;
@@ -648,7 +665,7 @@ footer .icon-footer {
 footer .info-footer {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 1px;
 }
 
 @media only screen and (min-width: 1000px) {
