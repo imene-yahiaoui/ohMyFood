@@ -1,20 +1,25 @@
+
 .coeur_menu{
     font-size: 35px;
     color:$color-grisFoncer;
     position: absolute;
     right: 37px;
     top: 40px;
+    cursor: pointer;
 
 }
 
 .coeur_menu_color{
+    transition: 1s;
+    opacity: 0;  
     font-size: 35px;
     position: absolute;
     right: 37px;
 top: 40px;
     color: rgba(128, 128, 128, 0);
     &:hover{
-        transition: 1.5s;
+        
+        opacity: 1;  
         background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
         -webkit-background-clip: text;
         background-clip: text;

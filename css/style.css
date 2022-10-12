@@ -381,11 +381,12 @@ footer .info-footer {
   position: absolute;
   right: 57px;
   color: #423f3f;
+  cursor: pointer;
 }
 
 .coeur_color_a,
 .coeur_color {
-  transition: 0.1s;
+  transition: 1s;
   font-size: 23px;
   position: absolute;
   right: 57px;
@@ -648,9 +649,12 @@ body {
   position: absolute;
   right: 37px;
   top: 40px;
+  cursor: pointer;
 }
 
 .coeur_menu_color {
+  transition: 1s;
+  opacity: 0;
   font-size: 35px;
   position: absolute;
   right: 37px;
@@ -658,7 +662,7 @@ body {
   color: rgba(128, 128, 128, 0);
 }
 .coeur_menu_color:hover {
-  transition: 1.5s;
+  opacity: 1;
   background: linear-gradient(350deg, #ff79da 25%, #9356dc 65%);
   -webkit-background-clip: text;
   background-clip: text;
