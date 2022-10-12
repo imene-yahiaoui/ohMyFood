@@ -6,28 +6,29 @@
         position: absolute;
         right: 57px;
          color:$color-grisFoncer;
-               
+            
     }
 
    .coeur_color_a,
    .coeur_color{
-    transition: 5s;
+    transition: 0.1s;
     font-size: 23px;
         position: absolute;
         right: 57px;
        color: rgba(128, 128, 128, 0);
        color: transparent;
+       opacity: 0;    
          
       
     
          &:hover{
           
-           
-          background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
+           opacity: 1;
+         background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-         
+       
             
          }
     }
@@ -35,7 +36,7 @@
 
     
 
-    @media only screen and (min-width: 768px) and(max-width:991px) {
+    @media only screen and (min-width: 768px) and(max-width:1101px) {
       .coeur_color{
         position: absolute;
         right: 62px;
@@ -48,41 +49,40 @@
         position: absolute;
       }
 
-
-.coeur_a{
-  position: relative;
-
-  right: 41px;
-}
-.coeur_color_a{
-
-  position: relative;
-  right: 68px;
-
-}
+      .coeur_a {
+        position: relative;
+        right: 14px;
+        top: 9px;
+      }
+      .coeur_color_a {
+        position: relative;
+        right: 41px;
+        top: 9px;
+        
+      }
     }
 
 
 
-    /*
+  
 
- @media only screen and (min-width: 1000px)  {
+ @media only screen and (min-width: 1101px)  {
 
     .coeur {
      
 
         position: relative;
-        right: 21px;
+        right: -24%;
         top: 10px;
         font-size: 23px;
     }
     .coeur_color{
      
         position: relative;
-        right: 21px;
+        right: 29%;
         top: 10px;
         font-size: 23px;
-        color: aqua;
+      
         
         &:hover{
             background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
@@ -92,4 +92,15 @@
          }
     }
       
- }*/
+    .coeur_a {
+      position: relative;
+      right: -22%;
+top: 11px;
+    }
+    .coeur_color_a {
+      position: relative;
+      right: 33%;
+      top: 11px;
+      
+    }
+ } 

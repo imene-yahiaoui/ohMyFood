@@ -79,7 +79,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   .info h3 {
     font-size: 40px;
     text-align: center;
@@ -139,7 +139,7 @@ body {
   color: #9356dc;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   .fonction {
     padding-left: 10px;
     padding-right: 10px;
@@ -148,6 +148,8 @@ body {
     flex-direction: row;
     -moz-column-gap: 12px;
          column-gap: 12px;
+    display: flex;
+    justify-content: center;
   }
   .fonction .etapes-fonction {
     padding-left: 0px;
@@ -155,42 +157,34 @@ body {
   .fonction .etapes-fonction::before {
     left: -13px;
     position: relative;
+    font-size: 12px;
   }
 }
-/*    @media only screen and (min-width: 768px)  {
-
-
-
-
-
-    .fonction{
-        padding-left: 104px;
-
-        padding-right: 90px;
-
-        h2 {
-
-            padding-left: 0px;
-        }
-
-
-        ol{
-            flex-direction: row;
-            justify-content: center;
-            column-gap: 42px;
-        }
-
-       .etapes-fonction{
-        column-gap: 24px;
-               padding-left: 0px;
-               width: 43%;
-
-       &::before{
-            left: -13px;
-            position: relative;
-        }}
-    }
-}*/
+@media only screen and (min-width: 1100px) {
+  .fonction {
+    padding-left: 104px;
+    padding-right: 90px;
+  }
+  .fonction h2 {
+    padding-left: 0px;
+  }
+  .fonction ol {
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 42px;
+         column-gap: 42px;
+  }
+  .fonction .etapes-fonction {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    padding-left: 0px;
+    width: 43%;
+  }
+  .fonction .etapes-fonction::before {
+    left: -13px;
+    position: relative;
+  }
+}
 .restaurant {
   background-color: #f6f6f6;
   padding-bottom: 62px;
@@ -206,7 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   /*   justify-content: center;
-     align-items: center;*/
+    align-items: center;*/
 }
 .resto a {
   display: flex;
@@ -220,6 +214,7 @@ body {
   width: 95%;
   margin: 17px;
   height: 261px;
+  overflow: hidden;
 }
 .resto .plats:hover {
   opacity: 0.5;
@@ -235,10 +230,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.nouveaua,
-.nouveaub {
-  background-color: #99E2D0;
+.resto .plats .photos .nouveaua,
+.resto .plats .photos .nouveaub {
+  background-color: #99e2d0;
   display: flex;
   height: 29px;
   align-items: center;
@@ -274,93 +268,43 @@ body {
   color: grey;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   .resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .nouveaua,
-.nouveaub {
+  .resto .plats .photos .nouveaub,
+.resto .plats .photos .nouveaua {
     position: relative;
-    width: 66px;
-    right: -281px;
-    top: -156px;
-    font-size: 13px;
-    margin-top: 0px;
-    height: 25px;
-    padding: 6px;
+    top: -4px;
+    width: 70px;
+    left: 77%;
   }
 }
-/*
-        @media only screen and (min-width: 1000px)  {
-            .restaurant{
-                padding-left: 104px;
-
-                padding-right: 90px;
-            }
-
-            .resto {
-
-
-flex-direction: row;
-
-
-            }
-            .resto .plats {
-
-                height: auto;
-            }
-
-
-            .resto .plats .photos img{
-                object-fit: fill;
-            }
-
-
-            .nouveaua,
-             .nouveaub{
-               position: relative;
-    width: 66px;
-    right: -95px;
-    top: -201px;
-    font-size: 13px;
-    margin-top: 0px;
-    height: 25px;
-    padding: 6px;
-        }
-
-    }
-
-
-@media only screen and (min-width: 1200px)  {
-
-
-
-
-     .nouveaua,
-     .nouveaub{
-
-         right:  -159px;
-         }
-
-
-
-
-     }
-
-
- @media only screen and (min-width: 1300px)  {
-
-
-
-
-     .nouveaua,
-     .nouveaub{
-
-         right:  -185px;
-         }
-
-     }*/
+@media only screen and (min-width: 1101px) {
+  .restaurant {
+    padding-left: 104px;
+    padding-right: 90px;
+  }
+  .resto {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .resto .plats .photos img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .resto .plats .photos .nouveaub,
+.resto .plats .photos .nouveaua {
+    position: relative;
+    top: -4px;
+    width: 70px;
+    left: 65%;
+  }
+  .paragraphe {
+    width: 72%;
+  }
+}
 /*footer*/
 footer {
   background-color: #353535;
@@ -441,22 +385,24 @@ footer .info-footer {
 
 .coeur_color_a,
 .coeur_color {
-  transition: 5s;
+  transition: 0.1s;
   font-size: 23px;
   position: absolute;
   right: 57px;
   color: rgba(128, 128, 128, 0);
   color: transparent;
+  opacity: 0;
 }
 .coeur_color_a:hover,
 .coeur_color:hover {
+  opacity: 1;
   background: linear-gradient(350deg, #ff79da 25%, #9356dc 65%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1101px) {
   .coeur_color {
     position: absolute;
     right: 62px;
@@ -468,42 +414,45 @@ footer .info-footer {
   }
   .coeur_a {
     position: relative;
-    right: 41px;
+    right: 14px;
+    top: 9px;
   }
   .coeur_color_a {
     position: relative;
-    right: 68px;
+    right: 41px;
+    top: 9px;
   }
 }
-/*
-
-@media only screen and (min-width: 1000px)  {
-
-   .coeur {
-
-
-       position: relative;
-       right: 21px;
-       top: 10px;
-       font-size: 23px;
-   }
-   .coeur_color{
-
-       position: relative;
-       right: 21px;
-       top: 10px;
-       font-size: 23px;
-       color: aqua;
-
-       &:hover{
-           background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
-           -webkit-background-clip: text;
-           background-clip: text;
-           -webkit-text-fill-color: transparent;
-        }
-   }
-
-}*/
+@media only screen and (min-width: 1101px) {
+  .coeur {
+    position: relative;
+    right: -24%;
+    top: 10px;
+    font-size: 23px;
+  }
+  .coeur_color {
+    position: relative;
+    right: 29%;
+    top: 10px;
+    font-size: 23px;
+  }
+  .coeur_color:hover {
+    background: linear-gradient(350deg, #ff79da 25%, #9356dc 65%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .coeur_a {
+    position: relative;
+    right: -22%;
+    top: 11px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: 33%;
+    top: 11px;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
