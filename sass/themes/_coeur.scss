@@ -1,7 +1,7 @@
 
-
+    .coeur_a,
     .coeur {
-        
+       
       font-size: 23px;
         position: absolute;
         right: 57px;
@@ -9,18 +9,20 @@
                
     }
 
- 
+   .coeur_color_a,
    .coeur_color{
-    
+    transition: 5s;
     font-size: 23px;
         position: absolute;
         right: 57px;
        color: rgba(128, 128, 128, 0);
+       color: transparent;
+         
       
     
          &:hover{
-         
-            transition: 4s;
+          
+           
           background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -32,6 +34,38 @@
 
 
     
+
+    @media only screen and (min-width: 768px) and(max-width:991px) {
+      .coeur_color{
+        position: absolute;
+        right: 62px;
+
+      }
+      
+      .coeur {
+        right: 62px;
+        color: #423f3f;
+        position: absolute;
+      }
+
+
+.coeur_a{
+  position: relative;
+
+  right: 41px;
+}
+.coeur_color_a{
+
+  position: relative;
+  right: 68px;
+
+}
+    }
+
+
+
+    /*
+
  @media only screen and (min-width: 1000px)  {
 
     .coeur {
@@ -58,4 +92,4 @@
          }
     }
       
- }
+ }*/

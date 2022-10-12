@@ -61,7 +61,39 @@ margin-top: 33px;
     }
 
 
-    @media only screen and (min-width: 1000px)  {
+    @media only screen and (min-width: 768px)  {
+
+
+
+   
+
+        .fonction{
+            padding-left: 10px;
+            padding-right: 10px;
+
+           
+    
+        
+            ol{
+                flex-direction: row;
+                
+                column-gap: 12px;
+            }
+        
+           .etapes-fonction{
+          
+                   padding-left: 0px;
+              
+           
+           &::before{
+                left: -13px;
+                position: relative;
+            }}
+        }
+    }
+
+
+    /*    @media only screen and (min-width: 768px)  {
 
 
 
@@ -94,4 +126,4 @@ margin-top: 33px;
                 position: relative;
             }}
         }
-    }
+    }*/
