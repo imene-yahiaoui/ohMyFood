@@ -517,7 +517,7 @@ body {
 }
 
 .menu {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
   margin-top: -61px;
@@ -540,8 +540,8 @@ body {
 
 .btn_menu_check {
   background-color: #99e2d0;
-  width: 15%;
-  margin-right: -15%;
+  width: 60px;
+  margin-right: -60px;
   border-radius: 0px 20px 20px 0px;
   align-items: center;
   justify-content: center;
@@ -597,20 +597,30 @@ body {
   align-content: flex-end;
   margin-left: auto;
 }
-.btn_menu p {
-  padding: 10px;
-  margin: 0px;
+.btn_menu .pharagraphe-menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-wrap: nowrap;
+}
+.btn_menu p {
+  padding: 10px;
+  margin: 0px;
+  white-space: nowrap;
   font-size: 14px;
   color: #423f3f;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .btn_menu b {
+  white-space: nowrap;
   display: block;
   padding-bottom: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .btn_menu:hover .btn_menu_check {
   transition: 1.5s;
