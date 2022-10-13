@@ -3,11 +3,11 @@
     justify-content: center;
 }
 .btn_commande {
-    width: 50%;
+    width:  184px;
     color: white;
     height: 56px;
     border-radius: 30px;
-    background-image: linear-gradient( $color-Secondaire,$color-primaire);
+    background-image: linear-gradient(351deg, $color-primaire , $color-Secondaire);
     @extend %btn;
     display: flex;
     justify-content: center;
