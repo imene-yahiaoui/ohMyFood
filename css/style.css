@@ -30,7 +30,6 @@ body {
   font-size: 2rem;
   padding: 10px 20px;
   width: 100%;
-  box-shadow: 0 3px 9px rgb(218, 218, 218);
 }
 
 .localisation {
@@ -472,9 +471,9 @@ body {
   justify-content: flex-start;
   height: 68px;
 }
-
-.titre_Header {
+.menu-header a {
   font-family: "Shrikhand", cursive;
+  color: black;
   text-align: center;
   font-size: 2rem;
   width: 100%;
@@ -482,8 +481,11 @@ body {
 }
 
 .fa-arrow-left {
-  font-size: 25px;
+  font-size: 30px;
   color: black;
+  position: absolute;
+  left: 37px;
+  top: 20px;
 }
 
 .img_menu {
@@ -630,6 +632,13 @@ body {
   row-gap: 25px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .plats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
 .coeur_menu {
   font-size: 35px;
   color: #423f3f;

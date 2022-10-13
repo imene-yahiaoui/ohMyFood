@@ -8,19 +8,23 @@
     justify-content: flex-start;
 
     height: 68px;
+    a{
+        font-family: "Shrikhand", cursive;
+           color: black;
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center; 
+        
+    }
         
     }
  
-.titre_Header {
-    font-family: "Shrikhand", cursive;
-           
-    text-align: center;
-    font-size: 2rem;
-
-width: 100%;
-    text-align: center;}
 
 .fa-arrow-left{
-    font-size: 25px;
+    font-size: 30px;
     color: black;
+    position: absolute;
+    left: 37px;
+    top: 20px;
 }
