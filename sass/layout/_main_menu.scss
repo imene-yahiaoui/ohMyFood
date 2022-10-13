@@ -40,7 +40,7 @@
 
 .fa .fa-solid,
 .fa-check {
-  display: grid;
+  display: grid !important;
   place-items: center;
   background: white;
   border-radius: 50%;

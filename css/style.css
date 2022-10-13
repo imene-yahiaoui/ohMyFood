@@ -465,42 +465,19 @@ body {
   margin: 0 auto;
 }
 
-/*
-//le header de page menu
-.menu-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 50px;
-}
-
-.titre_Header{
-    font-family: "Shrikhand", cursive;
-    font-size: 30px;
-
-
-}
-
-
-//la fleche aguche 
-.fa-arrow-left{
-    font-size: 25px;
-    color: black;
-}
-*/
 .menu-header {
   padding: 0% 10%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  grid-gap: 20%;
+  height: 68px;
 }
 
 .titre_Header {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -550,7 +527,7 @@ body {
 
 .fa .fa-solid,
 .fa-check {
-  display: grid;
+  display: grid !important;
   place-items: center;
   background: white;
   border-radius: 50%;
