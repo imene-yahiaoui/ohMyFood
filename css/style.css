@@ -796,6 +796,26 @@ body {
     transform: rotate(0);
   }
 }
+@-webkit-keyframes effet {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes effet {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
 .btn_menu {
   border-radius: 21px;
   overflow: hidden;
@@ -804,6 +824,20 @@ body {
   height: 73px;
   width: 100%;
   display: flex;
+  -webkit-animation: effet 1s both;
+          animation: effet 1s both;
+}
+.btn_menu:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.btn_menu:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.btn_menu:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 .btn_menu span {
   display: flex;

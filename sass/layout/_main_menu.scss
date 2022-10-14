@@ -60,8 +60,18 @@
     transform: rotate(0);
   }
 }
+@import "../utils/animation";
+
 
 .btn_menu {
+  @for $i from 1 through 3{
+    &:nth-child(#{$i}){
+  animation-delay: 100ms * $i ;
+  
+    }
+  
+  
+  }
   border-radius: 21px;
   overflow: hidden;
   box-shadow: 0px 8px 10px -5px grey;
@@ -70,6 +80,10 @@
   height: 73px;
   width: 100%;
   display: flex;
+
+  animation: effet 1s both;
+
+
 
   span {
     display: flex;
