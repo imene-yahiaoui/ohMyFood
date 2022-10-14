@@ -847,6 +847,10 @@ body {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
+.btn_menu:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
 .btn_menu span {
   display: flex;
   align-items: flex-end;
@@ -967,6 +971,7 @@ body {
 }
 
 .coeur_menu_color {
+  cursor: pointer;
   transition: 1s;
   opacity: 0;
   font-size: 35px;
