@@ -864,6 +864,7 @@ body {
   white-space: nowrap;
   font-size: 15px;
   color: #423f3f;
+  font-weight: 100;
   overflow: hidden;
   text-overflow: ellipsis;
 }
