@@ -10,7 +10,6 @@
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   transform-origin: top;
-  opacity: 0.9;
 }
 @-webkit-keyframes cacher {
   to {
@@ -29,8 +28,8 @@
   transform: translate(-50%, -50%);
 }
 #loader .tall-stack {
-  -webkit-animation: slide-plate-out 5s infinite;
-          animation: slide-plate-out 5s infinite;
+  -webkit-animation: slide-plate-out 6000ms infinite;
+          animation: slide-plate-out 6000ms infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease;
@@ -42,8 +41,8 @@
   background: #9356dc;
   position: relative;
   border-radius: 6px 6px 2rem 2rem;
-  -webkit-animation: slide-plate-in 5s infinite;
-          animation: slide-plate-in 5s infinite;
+  -webkit-animation: slide-plate-in 6000ms infinite;
+          animation: slide-plate-in 6000ms infinite;
   transform: translateX(100vw);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -97,8 +96,8 @@
           animation-timing-function: ease-in;
   -webkit-animation-fill-mode: forward;
           animation-fill-mode: forward;
-  -webkit-animation: element-drop 5s infinite;
-          animation: element-drop 5s infinite;
+  -webkit-animation: element-drop 6000ms infinite;
+          animation: element-drop 6000ms infinite;
   position: relative;
 }
 #loader .falling-element:nth-child(8) {
