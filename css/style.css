@@ -251,6 +251,14 @@ body {
   -moz-column-gap: 18px;
        column-gap: 18px;
 }
+.localisation .input {
+  border: none;
+  height: 100%;
+  color: #353535;
+  background-color: #eaeaea;
+  font-weight: 500;
+  border: 1px solid #eaeaea;
+}
 
 .info {
   display: flex;
