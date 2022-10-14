@@ -307,24 +307,25 @@ body {
 /*footer*/
 footer {
   background-color: #353535;
-  color: white;
+  color: #FFFFFF;
   margin-top: -44px;
   padding-bottom: 38px;
   padding-left: 20px;
 }
-footer a {
-  color: white;
-}
-footer h3 {
-  color: white;
+footer .footer_titre {
+  color: #FFFFFF;
   font-family: Shrikhand;
   font-size: 18px;
   padding-top: 25px;
   line-height: 26px;
-  margin-bottom: 2px;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+footer a {
+  color: #FFFFFF;
 }
 footer .mail {
-  margin-top: -10px;
+  margin-top: -20px;
 }
 footer .icon-footer {
   display: flex;
@@ -333,11 +334,16 @@ footer .icon-footer {
   -moz-column-gap: 10px;
        column-gap: 10px;
   margin-bottom: -25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .icon-footer i {
+  font-size: 11px;
 }
 footer .info-footer {
   display: flex;
   flex-direction: column;
-  row-gap: 1px;
+  row-gap: 29px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -348,12 +354,15 @@ footer .info-footer {
     padding-top: 0px;
     padding-bottom: 0px;
     height: 106px;
-    justify-content: flex-start;
+    justify-content: center;
   }
-  footer h3 {
+  footer .footer_titre {
     order: 2;
     padding-left: 32px;
     padding-top: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
   }
   footer a {
     margin-top: 0px;
@@ -756,24 +765,25 @@ body {
 /*footer*/
 footer {
   background-color: #353535;
-  color: white;
+  color: #FFFFFF;
   margin-top: -44px;
   padding-bottom: 38px;
   padding-left: 20px;
 }
-footer a {
-  color: white;
-}
-footer h3 {
-  color: white;
+footer .footer_titre {
+  color: #FFFFFF;
   font-family: Shrikhand;
   font-size: 18px;
   padding-top: 25px;
   line-height: 26px;
-  margin-bottom: 2px;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+footer a {
+  color: #FFFFFF;
 }
 footer .mail {
-  margin-top: -10px;
+  margin-top: -20px;
 }
 footer .icon-footer {
   display: flex;
@@ -782,11 +792,16 @@ footer .icon-footer {
   -moz-column-gap: 10px;
        column-gap: 10px;
   margin-bottom: -25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .icon-footer i {
+  font-size: 11px;
 }
 footer .info-footer {
   display: flex;
   flex-direction: column;
-  row-gap: 1px;
+  row-gap: 29px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -797,12 +812,15 @@ footer .info-footer {
     padding-top: 0px;
     padding-bottom: 0px;
     height: 106px;
-    justify-content: flex-start;
+    justify-content: center;
   }
-  footer h3 {
+  footer .footer_titre {
     order: 2;
     padding-left: 32px;
     padding-top: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
   }
   footer a {
     margin-top: 0px;
