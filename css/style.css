@@ -333,6 +333,7 @@ body {
   -moz-column-gap: 17px;
        column-gap: 17px;
   padding-left: 32px;
+  cursor: pointer;
 }
 .fonction .etapes-fonction::before {
   counter-increment: compteListe 1;
@@ -829,6 +830,7 @@ body {
   overflow: hidden;
   box-shadow: 0px 8px 10px -5px grey;
   background-color: white;
+  cursor: pointer;
   height: 73px;
   width: 100%;
   display: flex;
@@ -939,28 +941,11 @@ body {
   .titre_menu {
     justify-content: center;
   }
-  /*      display: flex;
-
-      flex-direction: row;
-      padding: 0px 27%;
-
-  }*/
   .plats {
     width: 70%;
     margin: auto;
   }
 }
-/*
-
-@media only screen and (min-width:1101px) {
-
-
-
-
-
-
-
-}*/
 .coeur_menu {
   font-size: 35px;
   color: #423f3f;
