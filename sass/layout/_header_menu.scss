@@ -1,44 +1,39 @@
+.menu-header {
+  padding: 0% 10%;
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-.menu-header { 
-    padding: 0% 10%;
-   
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    height: 68px;
-    a{
-        font-family: "Shrikhand", cursive;
-           color: black;
-        text-align: center;
-        font-size: 2rem;
-        width: 100%;
-        text-align: center; 
-        
-    }
-        
-    }
- 
-
-.fa-arrow-left{
-    font-size: 30px;
+  height: 68px;
+  a {
+    font-family: "Shrikhand", cursive;
     color: black;
-    position: absolute;
-    left: 37px;
-    top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media only screen and (min-width: 768px) and(max-width:1100px) {
 .fa-arrow-left {
-  
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  left: 37px;
+  top: 20px;
+}
+
+@import "../utils/mixin";
+
+@include pour_tablet {
+  .fa-arrow-left {
     left: 64px;
-}
+  }
 }
 
-@media only screen and (min-width:1101px) {
-
-    .fa-arrow-left {
+@include pour_pc {
+  .fa-arrow-left {
     left: 76px;
-}
+  }
 }

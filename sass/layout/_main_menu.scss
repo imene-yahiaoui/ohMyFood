@@ -62,15 +62,11 @@
 }
 @import "../utils/animation";
 
-
 .btn_menu {
-  @for $i from 1 through 4{
-    &:nth-child(#{$i}){
-  animation-delay: 100ms * $i ;
-  
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
     }
-  
-  
   }
   border-radius: 21px;
   overflow: hidden;
@@ -80,10 +76,8 @@
   height: 73px;
   width: 100%;
   display: flex;
-
+  transition: all 1.5s ease;
   animation: effet 1s both;
-
-
 
   span {
     display: flex;
@@ -128,7 +122,7 @@
 
   &:hover {
     .btn_menu_check {
-      transition: 1.5s;
+      transition: all 1.5s ease;
       margin-right: 0px;
     }
     .fa-check {
@@ -160,16 +154,14 @@
   padding: 0px;
 }
 
+@import "../utils/mixin";
 
-
-@media only screen and (min-width: 768px)  {
-
+@include pour_tablet {
   .img_menu {
     height: 283px;
     object-fit: cover;
-
   }
-  .menu{
+  .menu {
     width: 80%;
     display: grid;
     margin: auto;
@@ -177,16 +169,13 @@
     margin-top: -88px;
     position: relative;
   }
-   
- .titre_menu {    justify-content: center;}
-  
-  .plats{
- 
+
+  .titre_menu {
+    justify-content: center;
+  }
+
+  .plats {
     width: 70%;
     margin: auto;
+  }
 }
-
- 
-
-}
-

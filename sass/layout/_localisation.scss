@@ -1,21 +1,18 @@
+.localisation {
+  background-color: #eaeaea;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 18px;
 
-    .localisation {
-        background-color: #eaeaea;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        column-gap: 18px;
-
-        .input{
-            
-           border: none;
-            height: 100%;
-color: #353535;
-            background-color: #eaeaea;
-            font-weight: 500;
-             width: 134px;
-          
-        }
-    }
+  .input {
+    border: none;
+    height: 100%;
+    color: #353535;
+    background-color: #eaeaea;
+    font-weight: 500;
+    width: 134px;
+  }
+}

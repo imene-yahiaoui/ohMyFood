@@ -1,53 +1,47 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-gris;
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        background-color: $color-gris;
-        
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 60px;
-        h3 {
-            font-size: 24px;
-            text-align: center;
-            width: 70%;
-        }
-        p {
-            margin-top: -9px;
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 33px;
-            color:#353535
-        }
-        .btn {
-            color: white;
-            height: 56px;
-            border-radius: 30px;
-            background-image: linear-gradient( $color-Secondaire,$color-primaire);
-            @extend %btn;
-            text-align: center;
-            /*animation  btn */
-            &:hover{
-                opacity: .5;
-                transform: opacity .7s;
-                transform: scale(1.2);
-                transition: transform .3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  h3 {
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
+  }
+  p {
+    margin-top: -9px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 33px;
+    color: #353535;
+  }
+}
 
-            }
-            
-        }
-    }
+.btn {
+  color: white;
+  height: 56px;
+  border-radius: 30px;
+  background-image: linear-gradient($color-Secondaire, $color-primaire);
+  @extend %btn;
+  text-align: center;
+  /*animation  btn */
+  &:hover {
+    opacity: 0.5;
+    transform: opacity 0.7s;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+}
 
+@import "../utils/mixin";
 
-    @media only screen and (min-width: 1100px)  {
-
-
-
-        .info h3 {
-            font-size: 40px;
-            text-align: center;
-            width: 70%;
-        }
-  
-        
-    }
+@include pour_tablet {
+  .info h3 {
+    font-size: 40px;
+    text-align: center;
+    width: 70%;
+  }
+}

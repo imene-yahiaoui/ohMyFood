@@ -1,107 +1,94 @@
+.coeur_a,
+.coeur {
+  font-size: 23px;
+  position: absolute;
+  right: 57px;
+  color: $color-grisFoncer;
+  cursor: pointer;
+}
 
-    .coeur_a,
-    .coeur {
-       
-      font-size: 23px;
-        position: absolute;
-        right: 57px;
-         color:$color-grisFoncer;
-         cursor: pointer;
-            
-    }
+.coeur_color_a,
+.coeur_color {
+  transition: 1s;
+  font-size: 23px;
+  position: absolute;
+  right: 57px;
+  color: rgba(128, 128, 128, 0);
+  color: transparent;
+  opacity: 0;
 
-   .coeur_color_a,
-   .coeur_color{
-    transition: 1s;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient(
+      350deg,
+      $color-Secondaire 25%,
+      $color-primaire 65%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@import "../utils/mixin";
+
+@include pour_tablet {
+  .coeur_color {
+    position: absolute;
+    right: 62px;
+  }
+
+  .coeur {
+    right: 62px;
+    color: #423f3f;
+    position: absolute;
+  }
+
+  .coeur_a {
+    position: relative;
+    right: 14px;
+    top: 9px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: 41px;
+    top: 9px;
+  }
+}
+
+@include pour_pc {
+  .coeur {
+    position: relative;
+    right: -24%;
+    top: 10px;
     font-size: 23px;
-        position: absolute;
-        right: 57px;
-       color: rgba(128, 128, 128, 0);
-       color: transparent;
-       opacity: 0;    
-         
-      
-    
-         &:hover{
-          
-           opacity: 1;
-         background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-       
-            
-         }
+  }
+  .coeur_color {
+    position: relative;
+    right: 29%;
+    top: 10px;
+    font-size: 23px;
+
+    &:hover {
+      background: linear-gradient(
+        350deg,
+        $color-Secondaire 25%,
+        $color-primaire 65%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+  }
 
-
-    
-
-    @media only screen and (min-width: 768px) and(max-width:1101px) {
-      .coeur_color{
-        position: absolute;
-        right: 62px;
-
-      }
-      
-      .coeur {
-        right: 62px;
-        color: #423f3f;
-        position: absolute;
-      }
-
-      .coeur_a {
-        position: relative;
-        right: 14px;
-        top: 9px;
-      }
-      .coeur_color_a {
-        position: relative;
-        right: 41px;
-        top: 9px;
-        
-      }
-    }
-
-
-
-  
-
- @media only screen and (min-width: 1101px)  {
-
-    .coeur {
-     
-
-        position: relative;
-        right: -24%;
-        top: 10px;
-        font-size: 23px;
-    }
-    .coeur_color{
-     
-        position: relative;
-        right: 29%;
-        top: 10px;
-        font-size: 23px;
-      
-        
-        &:hover{
-            background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-         }
-    }
-      
-    .coeur_a {
-      position: relative;
-      right: -22%;
-top: 11px;
-    }
-    .coeur_color_a {
-      position: relative;
-      right: 33%;
-      top: 11px;
-      
-    }
- } 
+  .coeur_a {
+    position: relative;
+    right: -22%;
+    top: 11px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: 33%;
+    top: 11px;
+  }
+}

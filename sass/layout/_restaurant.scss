@@ -45,24 +45,23 @@
         object-fit: cover;
       }
       .nouveaua,
-.nouveaub {
-  background-color: #99e2d0;
-  display: flex;
-  height: 29px;
-  align-items: center;
-  padding: 10px;
-  color: #299077;
-  position: absolute;
-  right: 10%;
-  margin-top: -154px;
+      .nouveaub {
+        background-color: #99e2d0;
+        display: flex;
+        height: 29px;
+        align-items: center;
+        padding: 10px;
+        color: #299077;
+        position: absolute;
+        right: 10%;
+        margin-top: -154px;
 
-  border-radius: 3px;
-  font-size: 0.8rem;
-}
+        border-radius: 3px;
+        font-size: 0.8rem;
+      }
     }
   }
 }
-
 
 .info-plats {
   display: flex;
@@ -89,61 +88,51 @@
   }
 }
 
-@media only screen and (min-width: 768px) and(max-width:1100px) {
+@import "../utils/mixin";
+
+@include pour_tablet {
   .resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
 
- .resto .plats .photos .nouveaub,
- .resto .plats .photos .nouveaua{
+  .resto .plats .photos .nouveaub,
+  .resto .plats .photos .nouveaua {
     position: relative;
     top: -4px;
     width: 70px;
     left: 77%;
-     } 
-
+  }
 }
 
+@include pour_pc {
+  .restaurant {
+    padding-left: 104px;
 
-@media only screen and (min-width:1101px) {
-            .restaurant{
-                padding-left: 104px;
-               
-                padding-right: 90px;
-            }
+    padding-right: 90px;
+  }
 
-            .resto {
-              justify-content: center;
-flex-direction: row;
+  .resto {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .resto .plats {
+    //  height: auto;
+  }
 
+  .resto .plats .photos img {
+    object-fit: cover;
+  }
 
-            }
-            .resto .plats {
-                
-              //  height: auto;
-            }
-          
-            
-            .resto .plats .photos img{
-                object-fit: cover;
-             
-                          }
-            
-            .resto .plats .photos .nouveaub,
-            .resto .plats .photos .nouveaua{
-              position: relative;
-              top: -4px;
-              width: 70px;
-              left: 65%;
-                } 
-           
-                .paragraphe{
-                  width: 72%;
-                }
-    }
+  .resto .plats .photos .nouveaub,
+  .resto .plats .photos .nouveaua {
+    position: relative;
+    top: -4px;
+    width: 70px;
+    left: 65%;
+  }
 
-
-
-   
+  .paragraphe {
+    width: 72%;
+  }
+}

@@ -1,108 +1,100 @@
-  /*footer*/
-  footer {
-    background-color: #353535;
-    color:#FFFFFF;
-    margin-top: -44px;
-    padding-bottom: 38px;
-    padding-left: 20px;
+/*footer*/
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  margin-top: -44px;
+  padding-bottom: 38px;
+  padding-left: 20px;
 
-    .footer_titre{
-        color: #FFFFFF;
-        font-family: Shrikhand;
-        font-size: 18px;
-        padding-top: 25px;
-        line-height: 26px;
-        margin-bottom: 17px;
-        font-weight: 400;
-       
+  .footer_titre {
+    color: #ffffff;
+    font-family: Shrikhand;
+    font-size: 18px;
+    padding-top: 25px;
+    line-height: 26px;
+    margin-bottom: 17px;
+    font-weight: 400;
+  }
+  a {
+    color: #ffffff;
+  }
+
+  .mail {
+    margin-top: -20px;
+  }
+  .icon-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: -25px;
+    font-size: 16px;
+    font-weight: 500;
+
+    i {
+      font-size: 11px;
     }
-a{
-color:#FFFFFF;
+  }
+
+  .info-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+  }
 }
 
-    .mail{
-         
-        margin-top: -20px;
-    }
-    .icon-footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: 10px;
-        margin-bottom: -25px;
-        font-size: 16px;
-        font-weight: 500;
+@import "../utils/mixin";
 
-        i{
-            font-size: 11px;
-        }
+@include pour_tablet {
+  footer {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: -5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 106px;
+    //   justify-content: flex-start;
+    justify-content: center;
+    .footer_titre {
+      order: 2;
+      padding-left: 32px;
+      padding-top: 22px;
+      font-size: 18px;
+      font-weight: 400;
+      list-style: none;
+    }
+    a {
+      margin-top: 0px;
     }
 
     .info-footer {
-        
-        display: flex;
-        flex-direction: column;
-        row-gap: 29px;
-       
+      order: 1;
+      flex-direction: row;
+      column-gap: 26px;
+      align-items: center;
     }
+
+    .icon-footer {
+      margin-bottom: 0px;
+    }
+
+    .mail {
+      margin-top: 0px;
+    }
+  }
 }
 
-
-@media only screen and (min-width: 768px)  {
-    
-    footer{
-        display: flex;
-        flex-direction: row;
-     
-        margin-top: -5px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 106px;
-     //   justify-content: flex-start;
-     justify-content: center;
-        .footer_titre{
-        order: 2;
-        padding-left: 32px;
-        padding-top: 22px;
-        font-size: 18px;
-        font-weight: 400;
-        list-style: none;
-    }
-        a{
-            margin-top: 0px;
-        }
-    
-        .info-footer {
-            order: 1;
-            flex-direction: row;
-           column-gap: 26px;
-            align-items: center;}
-    
-    
-            .icon-footer {
-                margin-bottom: 0px;
-               
-                }
-    
-                .mail{
-         
-                    margin-top:0px;
-                }
-    }
-    
-     
-}    
-
-@media only screen and (min-width:1101px) {
-    footer{
-        padding-left: 155px;
-        display: flex;
-        flex-direction: row;
-        padding-left: 60px;
-        margin-top: -5px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 106px;
-        justify-content: center;}
-
+@include pour_pc {
+  footer {
+    padding-left: 155px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    margin-top: -5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 106px;
+    justify-content: center;
+  }
 }

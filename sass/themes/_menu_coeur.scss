@@ -1,49 +1,48 @@
-
-.coeur_menu{
-    font-size: 35px;
-    color:$color-grisFoncer;
-    position: absolute;
-    right: 37px;
-    top: 40px;
-    cursor: pointer;
-
+.coeur_menu {
+  font-size: 35px;
+  color: $color-grisFoncer;
+  position: absolute;
+  right: 37px;
+  top: 40px;
+  cursor: pointer;
 }
 
-.coeur_menu_color{
-    cursor: pointer;
-    transition: 1s;
-    opacity: 0;  
-    font-size: 35px;
-    position: absolute;
-    right: 37px;
-top: 40px;
-    color: rgba(128, 128, 128, 0);
-    &:hover{
-        
-        opacity: 1;  
-        background: linear-gradient(350deg, $color-Secondaire 25%, $color-primaire 65%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-     }
+.coeur_menu_color {
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0;
+  font-size: 35px;
+  position: absolute;
+  right: 37px;
+  top: 40px;
+  color: rgba(128, 128, 128, 0);
+  /* transition quand la souris quitte l'élément */
+
+  &:hover {
+    opacity: 1;
+    background: linear-gradient(
+      350deg,
+      $color-Secondaire 25%,
+      $color-primaire 65%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
- 
+@import "../utils/mixin";
 
-@media only screen and (min-width: 768px)  {
+@include pour_tablet {
+  .coeur_menu {
+    position: relative;
+    right: -26px;
+    top: -1px;
+  }
 
-    .coeur_menu{
-        position: relative;
-        right: -26px;
-        top: -1px;
-    
-    }
-
-    .coeur_menu_color{
-        position: relative;
-        right: 13px;
-        top: -1px;
-    }
-
-
-} 
+  .coeur_menu_color {
+    position: relative;
+    right: 13px;
+    top: -1px;
+  }
+}
