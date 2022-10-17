@@ -428,9 +428,11 @@ body {
   margin: 17px;
   height: 261px;
   overflow: hidden;
+  transition: 1s ease-out;
 }
 .resto .plats:hover {
   opacity: 0.5;
+  transition: 1s ease-out;
 }
 .resto .plats .photos {
   height: 185px;

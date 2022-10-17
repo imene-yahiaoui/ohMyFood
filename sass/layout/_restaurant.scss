@@ -27,9 +27,11 @@
     margin: 17px;
     height: 261px;
     overflow: hidden;
+       transition: 1s ease-out;
     //animation les plats
     &:hover {
       opacity: 0.5;
+      transition: 1s ease-out;
         }
 
     .photos {
