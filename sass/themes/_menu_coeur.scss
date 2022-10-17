@@ -5,21 +5,31 @@
   right: 37px;
   top: 40px;
   cursor: pointer;
+
+ 
 }
 
 .coeur_menu_color {
-  cursor: pointer;
-  transition: 1s;
-  opacity: 0;
+
+ cursor: pointer;
+ 
+ transition: 1s;
+ opacity: 0;
   font-size: 35px;
   position: absolute;
   right: 37px;
   top: 40px;
   color: rgba(128, 128, 128, 0);
+  
+  
+
   /* transition quand la souris quitte l'élément */
 
   &:hover {
-    opacity: 1;
+
+
+  opacity: 1;
+    
     background: linear-gradient(
       350deg,
       $color-Secondaire 25%,
@@ -28,8 +38,19 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+
+
+
   }
-}
+
+ }
+
+
+
+
+
+
 
 @import "../utils/mixin";
 
@@ -46,3 +67,4 @@
     top: -1px;
   }
 }
+
