@@ -139,7 +139,7 @@
   row-gap: 20px;
   padding-bottom: 40px;
 }
-
+ 
 .titre_choix_menu {
   width: 40px;
   color: $color-grisFoncer;
@@ -148,6 +148,13 @@
   text-transform: uppercase;
   font-weight: 100;
 }
+@media only screen and (max-width: 767px)  {
+  
+
+  .a {
+  margin-left: 41px;
+  
+}}
 
 .choix_menu {
   display: flex;
