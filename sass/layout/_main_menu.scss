@@ -77,8 +77,8 @@
   height: 73px;
   width: 100%;
   display: flex;
-  transition: all 1.5s ease;
-  animation: effet 1s both;
+  transition: all 1s ease;
+  animation: effet .8s both;
 
   span {
     display: flex;
@@ -123,7 +123,7 @@
 
   &:hover {
     .btn_menu_check {
-      transition: all 1.5s ease;
+      transition: all 1s ease;
       margin-right: 0px;
     }
     .fa-check {

@@ -826,9 +826,9 @@ body {
   height: 73px;
   width: 100%;
   display: flex;
-  transition: all 1.5s ease;
-  -webkit-animation: effet 1s both;
-          animation: effet 1s both;
+  transition: all 1s ease;
+  -webkit-animation: effet 0.8s both;
+          animation: effet 0.8s both;
 }
 .btn_menu:nth-child(1) {
   -webkit-animation-delay: 100ms;
@@ -885,7 +885,7 @@ body {
   text-overflow: ellipsis;
 }
 .btn_menu:hover .btn_menu_check {
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   margin-right: 0px;
 }
 .btn_menu:hover .fa-check {
