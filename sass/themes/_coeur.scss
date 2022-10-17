@@ -5,34 +5,36 @@
   right: 57px;
   color: $color-grisFoncer;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .coeur_color_a,
 .coeur_color {
-  transition: 1s;
   font-size: 23px;
   position: absolute;
   right: 57px;
-  color: rgba(128, 128, 128, 0);
+  overflow: hidden;
+  background-image: linear-gradient(218deg, $color-primaire, $color-Secondaire);
+  transition: 1s ease-out;
   color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   opacity: 0;
 
   &:hover {
     opacity: 1;
-    background: linear-gradient(
-      350deg,
-      $color-Secondaire 25%,
-      $color-primaire 65%
+    background-image: linear-gradient(
+      218deg,
+      $color-primaire,
+      $color-Secondaire
     );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    transition: 1s ease-in;
   }
 }
 
 @import "../utils/mixin";
 
-@include pour_tablet {
+@include pour_tablet_seul {
   .coeur_color {
     position: absolute;
     right: 62px;
@@ -41,6 +43,7 @@
   .coeur {
     right: 62px;
     color: #423f3f;
+
     position: absolute;
   }
 
@@ -68,17 +71,6 @@
     right: 29%;
     top: 10px;
     font-size: 23px;
-
-    &:hover {
-      background: linear-gradient(
-        350deg,
-        $color-Secondaire 25%,
-        $color-primaire 65%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
 
   .coeur_a {

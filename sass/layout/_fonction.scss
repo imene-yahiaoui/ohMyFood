@@ -28,7 +28,7 @@
     background-color: $color-gris;
     display: flex;
     flex-direction: row;
-    height: 77px;
+    height: 73px;
     column-gap: 17px;
     padding-left: 32px;
     cursor: pointer;
@@ -46,10 +46,12 @@
       color: #fff;
       position: absolute;
       left: 11px;
+      transition: all 1s ease-out;
     }
 
     &:hover {
-      background-color: #9256dc35;
+      transition: 0.5s ease-in;
+      background-color: #9256dc3f;
       .color {
         color: $color-primaire;
       }
@@ -57,9 +59,8 @@
   }
 }
 
-
 @import "../utils/mixin";
-@include pour_tablet {
+@include pour_tablet_seul {
   .fonction {
     padding-left: 10px;
     padding-right: 10px;

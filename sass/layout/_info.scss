@@ -27,12 +27,12 @@
   background-image: linear-gradient($color-Secondaire, $color-primaire);
   @extend %btn;
   text-align: center;
+  transition: all 1s ease-out;
   /*animation  btn */
   &:hover {
-    opacity: 0.5;
-    transform: opacity 0.7s;
     transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
+    transition:  .5s ease-in ;
+  
   }
 }
 
