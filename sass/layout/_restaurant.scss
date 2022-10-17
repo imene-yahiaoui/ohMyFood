@@ -4,7 +4,7 @@
 
   h3 {
     font-size: 24px;
-    padding-left: 3%;
+    padding-left: 20px;
     margin-bottom: 6px;
     padding-top: 45px;
   }
@@ -90,7 +90,7 @@
 
 @import "../utils/mixin";
 
-@include pour_tablet {
+@include pour_tablet_seul {
   .resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,8 +110,8 @@
     padding-left: 104px;
 
     padding-right: 90px;
+  
   }
-
   .resto {
     justify-content: center;
     flex-direction: row;

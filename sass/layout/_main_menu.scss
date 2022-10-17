@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: margin-right 0.7s;
 }
 
 .fa .fa-solid,
@@ -142,6 +143,7 @@
 .titre_choix_menu {
   width: 40px;
   color: $color-grisFoncer;
+  padding-bottom: 10px;
   border-bottom: 3px solid $color-Tertiaire;
   text-transform: uppercase;
   font-weight: 100;
