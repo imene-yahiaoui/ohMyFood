@@ -424,7 +424,6 @@ body {
 }
 .resto a {
   display: flex;
-  flex-direction: column;
 }
 .resto .plats {
   background-color: white;
