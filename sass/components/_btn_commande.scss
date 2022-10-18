@@ -12,12 +12,12 @@
   display: flex;
   justify-content: center;
   transition: all 1s ease-out;
-  transform: scale(1);
-
-  transition: all 1s ease-out;
+   transition: all 1s ease-out;
   /*animation  btn */
   &:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease-in;
+    transition: 0.7s ease-in;
+    opacity: 0.5;
+    background-image: linear-gradient(351deg, $color-primaire, $color-Secondaire);
+   box-shadow: 1px 8px 10px 1px grey;
   }
 }

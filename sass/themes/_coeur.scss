@@ -6,6 +6,10 @@
   color: $color-grisFoncer;
   cursor: pointer;
   overflow: hidden;
+
+  &:hover{
+    opacity: 0;
+  }
 }
 
 .coeur_color_a,
@@ -15,7 +19,7 @@
   right: 57px;
   overflow: hidden;
   background-image: linear-gradient(218deg, $color-primaire, $color-Secondaire);
-  transition: 1s ease-out;
+  transition: 700ms ease-out;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -28,7 +32,7 @@
       $color-primaire,
       $color-Secondaire
     );
-    transition: 1s ease-in;
+    transition: 700ms ease-in;
   }
 }
 

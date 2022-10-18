@@ -28,15 +28,27 @@
 }
 
 .btn_menu_check {
-  background-color: $color-Tertiaire;
 
+ 
+
+  display: grid;
+  place-items: center;
+  color: $color-Tertiaire;
+  background-color: $color-Tertiaire;
+  width: 60px;
+  height: auto;
+  margin-right: -60px;
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  transition: margin-right 0.7s;
+  /*
   width: 60px;
   margin-right: -60px;
   border-radius: 0px 20px 20px 0px;
   align-items: center;
   justify-content: center;
-  display: flex;
-  transition: margin-right 0.7s;
+  display: grid;
+  transition: margin-right 0.7s;*/
 }
 
 .fa .fa-solid,
@@ -85,10 +97,10 @@
     align-items: flex-end;
     font-weight: 900;
     padding-bottom: 11px;
-    padding-right: 19px;
-    justify-content: flex-end;
+   
     align-content: flex-end;
-    margin-left: auto;
+   margin-left: auto;
+    margin-right: 20px;
   }
 
   .pharagraphe-menu {
@@ -102,7 +114,9 @@
   }
 
   p {
+    width: 85%;
     padding: 16px;
+    padding-right:0px ;
     margin: 0px;
     white-space: nowrap;
     font-size: 15px;
@@ -187,4 +201,25 @@
     width: 70%;
     margin: auto;
   }
+}
+
+@include portable_smal{
+  .titre_menu h3 {
+    font-size: 18px;
+}
+
+.btn_menu_check {
+
+  width: 80px;
+  margin-right: -80px;
+}
+.btn_menu   {
+P{
+  font-size: 13px;
+}
+b{
+  font-size: 16px;
+}
+
+}
 }

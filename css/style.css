@@ -282,14 +282,16 @@ body {
   color: white;
   height: 56px;
   border-radius: 30px;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(351deg, #9356dc, #ff79da);
   text-align: center;
   transition: all 1s ease-out;
   /*animation  btn */
 }
 .btn:hover {
-  transform: scale(1.2);
   transition: 0.5s ease-in;
+  opacity: 0.7;
+  background-image: linear-gradient(351deg, #9356dc, #ff79da);
+  box-shadow: 1px 8px 10px 1px grey;
 }
 
 @media only screen and (min-width: 768px) {
@@ -349,6 +351,7 @@ body {
 }
 .fonction .etapes-fonction:hover {
   transition: 0.5s ease-in;
+  opacity: 0.8;
   background-color: rgba(146, 86, 220, 0.2470588235);
 }
 .fonction .etapes-fonction:hover .color {
@@ -428,10 +431,6 @@ body {
   margin: 17px;
   height: 261px;
   overflow: hidden;
-  transition: 1s ease-out;
-}
-.resto .plats:hover {
-  opacity: 0.5;
   transition: 1s ease-out;
 }
 .resto .plats .photos {
@@ -618,6 +617,10 @@ footer .info-footer {
   cursor: pointer;
   overflow: hidden;
 }
+.coeur_a:hover,
+.coeur:hover {
+  opacity: 0;
+}
 
 .coeur_color_a,
 .coeur_color {
@@ -626,7 +629,7 @@ footer .info-footer {
   right: 57px;
   overflow: hidden;
   background-image: linear-gradient(218deg, #9356dc, #ff79da);
-  transition: 1s ease-out;
+  transition: 700ms ease-out;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -636,7 +639,7 @@ footer .info-footer {
 .coeur_color:hover {
   opacity: 1;
   background-image: linear-gradient(218deg, #9356dc, #ff79da);
-  transition: 1s ease-in;
+  transition: 700ms ease-in;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -759,14 +762,24 @@ body {
 }
 
 .btn_menu_check {
+  display: grid;
+  place-items: center;
+  color: #99e2d0;
   background-color: #99e2d0;
+  width: 60px;
+  height: auto;
+  margin-right: -60px;
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  transition: margin-right 0.7s;
+  /*
   width: 60px;
   margin-right: -60px;
   border-radius: 0px 20px 20px 0px;
   align-items: center;
   justify-content: center;
-  display: flex;
-  transition: margin-right 0.7s;
+  display: grid;
+  transition: margin-right 0.7s;*/
 }
 
 .fa .fa-solid,
@@ -853,10 +866,9 @@ body {
   align-items: flex-end;
   font-weight: 900;
   padding-bottom: 11px;
-  padding-right: 19px;
-  justify-content: flex-end;
   align-content: flex-end;
   margin-left: auto;
+  margin-right: 20px;
 }
 .btn_menu .pharagraphe-menu {
   display: flex;
@@ -868,7 +880,9 @@ body {
   flex-wrap: nowrap;
 }
 .btn_menu p {
+  width: 85%;
   padding: 16px;
+  padding-right: 0px;
   margin: 0px;
   white-space: nowrap;
   font-size: 15px;
@@ -947,6 +961,21 @@ body {
     margin: auto;
   }
 }
+@media only screen and (max-width: 350px) {
+  .titre_menu h3 {
+    font-size: 18px;
+  }
+  .btn_menu_check {
+    width: 80px;
+    margin-right: -80px;
+  }
+  .btn_menu P {
+    font-size: 13px;
+  }
+  .btn_menu b {
+    font-size: 16px;
+  }
+}
 .coeur_menu {
   font-size: 35px;
   color: #423f3f;
@@ -955,6 +984,9 @@ body {
   top: 40px;
   cursor: pointer;
   transition: 1s ease-in;
+}
+.coeur_menu:hover {
+  opacity: 0;
 }
 
 .coeur_menu_color {
@@ -968,12 +1000,12 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: 1s ease-out;
+  transition: 700ms ease-out;
 }
 .coeur_menu_color:hover {
   opacity: 1;
   background-image: linear-gradient(218deg, #9356dc, #ff79da);
-  transition: 1s ease-in;
+  transition: 700ms ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -986,6 +1018,18 @@ body {
     position: relative;
     right: 13px;
     top: -1px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .coeur_menu {
+    font-size: 27px;
+    right: 29px;
+    top: 30px;
+  }
+  .coeur_menu_color {
+    font-size: 27px;
+    right: 29px;
+    top: 30px;
   }
 }
 .commande {
@@ -1002,13 +1046,14 @@ body {
   display: flex;
   justify-content: center;
   transition: all 1s ease-out;
-  transform: scale(1);
   transition: all 1s ease-out;
   /*animation  btn */
 }
 .btn_commande:hover {
-  transform: scale(1.2);
-  transition: 0.5s ease-in;
+  transition: 0.7s ease-in;
+  opacity: 0.5;
+  background-image: linear-gradient(351deg, #9356dc, #ff79da);
+  box-shadow: 1px 8px 10px 1px grey;
 }
 
 /*footer*/

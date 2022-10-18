@@ -6,6 +6,9 @@
   top: 40px;
   cursor: pointer;
   transition: 1s ease-in;
+  &:hover{
+    opacity: 0;
+  }
 }
 
 .coeur_menu_color {
@@ -19,7 +22,7 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: 1s ease-out;
+  transition:  700ms ease-out;
   &:hover {
     opacity: 1;
     background-image: linear-gradient(
@@ -27,7 +30,7 @@
       $color-primaire,
       $color-Secondaire
     );
-    transition: 1s ease-in;
+    transition: 700ms ease-in;
   }
 }
 
@@ -45,4 +48,22 @@
     right: 13px;
     top: -1px;
   }
+}
+
+
+@include portable_smal{
+
+
+.coeur_menu {
+    font-size: 27px;
+    right: 29px;
+top: 30px;
+
+}
+.coeur_menu_color {
+  font-size: 27px;
+  right: 29px;
+  top: 30px;
+}
+
 }
