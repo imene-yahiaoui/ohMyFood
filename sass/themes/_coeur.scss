@@ -9,6 +9,7 @@
 
   &:hover{
     opacity: 0;
+    display: none;
   }
 }
 
@@ -72,7 +73,7 @@
   }
   .coeur_color {
     position: relative;
-    right: 29%;
+    right: 15px;
     top: 10px;
     font-size: 23px;
   }
@@ -84,7 +85,22 @@
   }
   .coeur_color_a {
     position: relative;
-    right: 33%;
+    right: 16px;
     top: 11px;
   }
+}
+@include pc_smal {
+
+  .coeur_color {
+    position: relative;
+    right: -11px;
+    top: -17px;
+}
+  
+  .coeur_color_a {
+    position: relative;
+       right: -11px;
+    top: -16px;
+  }
+
 }

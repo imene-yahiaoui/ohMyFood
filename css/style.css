@@ -421,6 +421,7 @@ body {
 }
 .resto a {
   display: flex;
+  flex-direction: column;
 }
 .resto .plats {
   background-color: white;
@@ -516,6 +517,18 @@ body {
   }
   .paragraphe {
     width: 72%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1110px) {
+  .resto {
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+  }
+  .resto .plats .photos .nouveaub, .resto .plats .photos .nouveaua {
+    margin-bottom: 121px;
+  }
+  .info-plats .paragraphe {
+    margin-top: -29px;
   }
 }
 /*footer*/
@@ -620,6 +633,7 @@ footer .info-footer {
 .coeur_a:hover,
 .coeur:hover {
   opacity: 0;
+  display: none;
 }
 
 .coeur_color_a,
@@ -672,7 +686,7 @@ footer .info-footer {
   }
   .coeur_color {
     position: relative;
-    right: 29%;
+    right: 15px;
     top: 10px;
     font-size: 23px;
   }
@@ -683,8 +697,20 @@ footer .info-footer {
   }
   .coeur_color_a {
     position: relative;
-    right: 33%;
+    right: 16px;
     top: 11px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1110px) {
+  .coeur_color {
+    position: relative;
+    right: -11px;
+    top: -17px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: -11px;
+    top: -16px;
   }
 }
 * {
