@@ -10,9 +10,12 @@
   .input {
     border: none;
     height: 100%;
-    color: #353535;
+    color: rgb(5, 5, 5);
     background-color: #eaeaea;
     font-weight: 500;
     width: 134px;
+    .placeholder{
+      color: rgb(5, 5, 5);
+    }
   }
 }
