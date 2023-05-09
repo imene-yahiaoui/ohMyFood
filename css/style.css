@@ -4,16 +4,9 @@
   background-color: rgb(243, 248, 248);
   height: 100vh;
   z-index: 1;
-  -webkit-animation: cacher 200ms forwards;
-          animation: cacher 200ms forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: cacher 200ms forwards;
+  animation-delay: 3s;
   transform-origin: top;
-}
-@-webkit-keyframes cacher {
-  to {
-    transform: scale(0);
-  }
 }
 @keyframes cacher {
   to {
@@ -27,12 +20,9 @@
   transform: translate(-50%, -50%);
 }
 #loader .tall-stack {
-  -webkit-animation: slide-plate-out 6000ms infinite;
-          animation: slide-plate-out 6000ms infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation: slide-plate-out 6000ms infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 #loader .plate {
   width: 230px;
@@ -40,13 +30,10 @@
   background: #9356dc;
   position: relative;
   border-radius: 6px 6px 2rem 2rem;
-  -webkit-animation: slide-plate-in 6000ms infinite;
-          animation: slide-plate-in 6000ms infinite;
+  animation: slide-plate-in 6000ms infinite;
   transform: translateX(100vw);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 #loader .plate .plate-bottom {
   content: "";
@@ -91,64 +78,33 @@
 }
 #loader .falling-element {
   transform: translateY(-100vh);
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation: element-drop 6000ms infinite;
-          animation: element-drop 6000ms infinite;
+  animation-timing-function: ease-in;
+  animation: element-drop 6000ms infinite;
   position: relative;
 }
 #loader .falling-element:nth-child(8) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 #loader .falling-element:nth-child(7) {
-  -webkit-animation-delay: 0.62s;
-          animation-delay: 0.62s;
+  animation-delay: 0.62s;
 }
 #loader .falling-element:nth-child(6) {
-  -webkit-animation-delay: 0.84s;
-          animation-delay: 0.84s;
+  animation-delay: 0.84s;
 }
 #loader .falling-element:nth-child(5) {
-  -webkit-animation-delay: 1.06s;
-          animation-delay: 1.06s;
+  animation-delay: 1.06s;
 }
 #loader .falling-element:nth-child(4) {
-  -webkit-animation-delay: 1.28s;
-          animation-delay: 1.28s;
+  animation-delay: 1.28s;
 }
 #loader .falling-element:nth-child(3) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 #loader .falling-element:nth-child(2) {
-  -webkit-animation-delay: 1.72s;
-          animation-delay: 1.72s;
+  animation-delay: 1.72s;
 }
 #loader .falling-element:nth-child(1) {
-  -webkit-animation-delay: 1.94s;
-          animation-delay: 1.94s;
-}
-@-webkit-keyframes element-drop {
-  0%, 100% {
-    transform: translateY(-100vh) scaleY(0.7);
-    opacity: 1;
-  }
-  11% {
-    transform: translateY(20%) scaleY(1.2);
-  }
-  13% {
-    transform: translateY(-30%) scaleY(0.9);
-  }
-  14%, 67% {
-    transform: translateY(0%) scaleY(1);
-    opacity: 1;
-  }
-  68% {
-    opacity: 0;
-    transition: none;
-    transform: translateY(-100vh) scaleY(0.7);
-  }
+  animation-delay: 1.94s;
 }
 @keyframes element-drop {
   0%, 100% {
@@ -171,28 +127,12 @@
     transform: translateY(-100vh) scaleY(0.7);
   }
 }
-@-webkit-keyframes slide-plate-in {
-  0% {
-    transform: translateX(100vw);
-  }
-  15%, 100% {
-    transform: translateX(0);
-  }
-}
 @keyframes slide-plate-in {
   0% {
     transform: translateX(100vw);
   }
   15%, 100% {
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes slide-plate-out {
-  65% {
-    transform: translateX(0);
-  }
-  85%, 100% {
-    transform: translateX(-100vw);
   }
 }
 @keyframes slide-plate-out {
@@ -382,7 +322,7 @@ body {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   .fonction {
     padding-left: 104px;
     padding-right: 90px;
@@ -395,12 +335,14 @@ body {
     justify-content: center;
     -moz-column-gap: 42px;
          column-gap: 42px;
+    display: flex;
   }
   .fonction .etapes-fonction {
     -moz-column-gap: 24px;
          column-gap: 24px;
     padding-left: 0px;
     width: 43%;
+    max-width: 930px;
   }
   .fonction .etapes-fonction::before {
     left: -13px;
@@ -490,14 +432,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .resto .plats .photos .nouveaub,
-.resto .plats .photos .nouveaua {
+  .resto .plats .photos .nouveaua {
     position: relative;
     top: -4px;
     width: 70px;
     left: 77%;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   .restaurant {
     padding-left: 104px;
     padding-right: 90px;
@@ -511,7 +453,7 @@ body {
        object-fit: cover;
   }
   .resto .plats .photos .nouveaub,
-.resto .plats .photos .nouveaua {
+  .resto .plats .photos .nouveaua {
     position: relative;
     top: -4px;
     width: 70px;
@@ -610,7 +552,7 @@ footer .info-footer {
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   footer {
     padding-left: 155px;
     display: flex;
@@ -679,7 +621,7 @@ footer .info-footer {
     top: 9px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   .coeur {
     position: relative;
     right: -24%;
@@ -755,7 +697,7 @@ body {
     left: 64px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   .fa-arrow-left {
     left: 76px;
   }
@@ -828,31 +770,12 @@ body {
   justify-items: center;
 }
 
-@-webkit-keyframes chekAnim {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
 @keyframes chekAnim {
   0% {
     transform: rotate(-270deg);
   }
   100% {
     transform: rotate(0);
-  }
-}
-@-webkit-keyframes effet {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
   }
 }
 @keyframes effet {
@@ -875,24 +798,19 @@ body {
   width: 100%;
   display: flex;
   transition: all 1s ease;
-  -webkit-animation: effet 0.8s both;
-          animation: effet 0.8s both;
+  animation: effet 0.8s both;
 }
 .btn_menu:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 .btn_menu:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 .btn_menu:nth-child(3) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  animation-delay: 300ms;
 }
 .btn_menu:nth-child(4) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  animation-delay: 400ms;
 }
 .btn_menu span {
   display: flex;
@@ -938,10 +856,8 @@ body {
   margin-right: 0px;
 }
 .btn_menu:hover .fa-check {
-  -webkit-animation-name: chekAnim;
-          animation-name: chekAnim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: chekAnim;
+  animation-duration: 1s;
 }
 
 .plats {
@@ -1166,7 +1082,7 @@ footer .info-footer {
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1820px) {
+@media only screen and (min-width: 993px) {
   footer {
     padding-left: 155px;
     display: flex;

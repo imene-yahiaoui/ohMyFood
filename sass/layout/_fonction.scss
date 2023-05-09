@@ -1,3 +1,4 @@
+@import "../utils/mixin";
 .color {
   color: #7e7e7e;
 }
@@ -60,7 +61,6 @@
   }
 }
 
-@import "../utils/mixin";
 @include pour_tablet_seul {
   .fonction {
     padding-left: 10px;
@@ -85,7 +85,7 @@
     }
   }
 }
-@import "../utils/mixin";
+
 @include pour_PC {
   .fonction {
     padding-left: 104px;
@@ -100,12 +100,14 @@
       flex-direction: row;
       justify-content: center;
       column-gap: 42px;
+      display: flex;
     }
 
     .etapes-fonction {
       column-gap: 24px;
       padding-left: 0px;
       width: 43%;
+      max-width: 930px;
 
       &::before {
         left: -13px;
